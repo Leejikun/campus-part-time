@@ -63,7 +63,7 @@ public class ActivityMain extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.aaa);
+        setContentView(R.layout.activity_home);
         mViewPaper = (ViewPager) findViewById(R.id.vp);
 
         //显示的图片
@@ -242,7 +242,7 @@ public class ActivityMain extends Activity {
 
                 holder=new ViewHolder();
 
-                convertView = mInflater.inflate(R.layout.bbb, null);
+                convertView = mInflater.inflate(R.layout.item_parttime, null);
                 holder.img = (ImageView)convertView.findViewById(R.id.img);
                 holder.title = (TextView)convertView.findViewById(R.id.title);
                 holder.info = (TextView)convertView.findViewById(R.id.info);
