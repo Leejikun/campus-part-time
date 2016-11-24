@@ -6,10 +6,9 @@ import android.os.Bundle;
 /**
  * Created by Administrator on 2016/11/22.
  */
-public class Message extends Activity {
+public class ActivityRegister extends Activity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.message);
-    }
-}
+        setContentView(R.layout.activity_register);
+}}

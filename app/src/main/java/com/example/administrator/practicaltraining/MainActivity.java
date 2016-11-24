@@ -2,7 +2,6 @@ package com.example.administrator.practicaltraining;
 
 import android.app.TabActivity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
@@ -13,14 +12,14 @@ public class MainActivity extends TabActivity implements RadioGroup.OnCheckedCha
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_tabhost);
 
         mHost = this.getTabHost();
 
-        mHost.addTab(mHost.newTabSpec("ONE").setIndicator("ONE").setContent(new Intent(this,ActivityMain.class)));
-        mHost.addTab(mHost.newTabSpec("TWO").setIndicator("TWO").setContent(new Intent(this,ActivityApply.class)));
-        mHost.addTab(mHost.newTabSpec("THREE").setIndicator("THREE").setContent(new Intent(this,Message .class)));
-        mHost.addTab(mHost.newTabSpec("FOUR").setIndicator("FOUR").setContent(new Intent(this,Myself.class)));
+        mHost.addTab(mHost.newTabSpec("ONE").setIndicator("ONE").setContent(new Intent(this,ActivityHomepage.class)));
+        mHost.addTab(mHost.newTabSpec("TWO").setIndicator("TWO").setContent(new Intent(this,ActivityClassification.class)));
+        mHost.addTab(mHost.newTabSpec("THREE").setIndicator("THREE").setContent(new Intent(this,ActivityMessage.class)));
+        mHost.addTab(mHost.newTabSpec("FOUR").setIndicator("FOUR").setContent(new Intent(this,ActivityMyself.class)));
 
         radioderGroup = (RadioGroup) findViewById(R.id.tabhost_radiogroup);
         radioderGroup.setOnCheckedChangeListener(this);

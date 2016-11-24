@@ -6,9 +6,10 @@ import android.os.Bundle;
 /**
  * Created by Administrator on 2016/11/22.
  */
-public class Zhuce extends Activity{
+public class ActivityClassification extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.zhuce);
-}}
+        setContentView(R.layout.acitivity_classification);
+    }
+}
