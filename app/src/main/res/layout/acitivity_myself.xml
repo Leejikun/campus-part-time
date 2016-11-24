@@ -2,9 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#d7d7d7">
+    android:background="@drawable/android_layout_bg">
 
     <RelativeLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -21,7 +22,7 @@
             android:text="登陆/注册"
             android:textColor="#000000"
             android:paddingLeft="20dp"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_toRightOf="@+id/id_muself_image"
             android:layout_centerVertical="true"/>
     </RelativeLayout>
@@ -34,10 +35,11 @@
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
+            android:layout_marginLeft="20.0dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="我的兼职"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -59,10 +61,11 @@
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
+            android:layout_marginLeft="20.0dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="发布兼职"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -84,10 +87,11 @@
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
+            android:layout_marginLeft="20.0dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="分享"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -107,10 +111,11 @@
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
+            android:layout_marginLeft="20.0dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="联系客服"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -123,7 +128,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1234567890"
-            android:textSize="20dp"
+            android:textSize="10dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"/>
     </RelativeLayout>
@@ -138,10 +143,11 @@
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
+            android:layout_marginLeft="20.0dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="意见反馈"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -163,10 +169,11 @@
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
+            android:layout_marginLeft="20.0dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="关于我们"
-            android:textSize="20dp"
+            android:textSize="17dp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -181,11 +188,13 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"/>
     <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:id="@+id/id_myself_tcbtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ff0000"
         android:textColor="#ffffff"
         android:text="退出登录"
-        android:textSize="20dp"/>
+        android:textSize="17dp"/>
 </LinearLayout>
