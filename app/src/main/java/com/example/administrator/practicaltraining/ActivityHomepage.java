@@ -23,7 +23,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-
+//----
 public class ActivityHomepage extends Activity {
 
     private ViewPager mViewPaper;
