@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bc">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册"
+        android:textColor="#fdfdfd"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/title" />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        android:layout_below="@+id/title"
+        android:layout_alignParentStart="true">
+        <TableRow>
+            <TextView
+                android:text="用户名："
+                android:textColor="#fdfdfd"/>
+            <EditText android:hint="请输入用户名"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="真实姓名："
+                android:textColor="#fdfdfd"/>
+            <EditText android:hint="请输入真实姓名"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="身份证号："
+                android:textColor="#fdfdfd"/>
+            <EditText android:hint="请输入身份证号"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="手机号："
+                android:textColor="#fdfdfd"/>
+            <EditText android:hint="请输入手机号"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="密码："
+                android:textColor="#fdfdfd"/>
+            <EditText android:hint="请输入密码"/>
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="确认密码："
+                android:textColor="#fdfdfd"/>
+            <EditText android:hint="请再输入密码"/>
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table"
+        android:id="@+id/拜托n"
+        android:text="注册"
+        android:textColor="#fdfdfd"
+        android:background="#52be56"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注册表示同意《app协议》"
+        android:gravity="center"
+        android:id="@+id/tv"
+        android:layout_below="@id/拜托n"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fh"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="返回"
+        android:textColor="#fdfdfd"
+        android:background="#52be56"/>
+</RelativeLayout>

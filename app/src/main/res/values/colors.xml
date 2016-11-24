@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- topbar背景色 -->
+    <color name="bg_topbar">#fbfbfb</color>
+    <color name="dark">#4f4f4f</color>
+    <color name="black">#000000</color>
+    <color name="hintColor">#d7d7d7</color>
+    <color name="pressBarBg">#f2f2f2</color>
+    <color name="lightBg">#fefefe</color>
+    <color name="gray">#9c9c9c</color>
+    <color name="theme">#9ccc65</color>
+</resources>

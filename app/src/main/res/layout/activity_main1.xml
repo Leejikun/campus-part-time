@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/beijing">
+
+    <TextView
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@color/theme"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:text="意见反馈"/>
+    <TextView
+        android:paddingLeft="10dp"
+        android:textColor="#090504"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="你想说些什么？"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="#F58742"
+        android:id="@+id/submit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="提交"/>
+</LinearLayout>

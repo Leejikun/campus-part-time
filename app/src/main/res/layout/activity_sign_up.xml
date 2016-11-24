@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="填写资料验证信息，可更快上岗并确保工资到账"
+        android:gravity="center"
+        android:textSize="15dp" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background">
+        <TextView
+            android:id="@+id/id_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:padding="10dp"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_toRightOf="@+id/id_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入真实姓名"
+            android:textSize="15dp"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background">
+        <TextView
+            android:text="性别"
+            android:padding="10dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_sex"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:text="男"
+            android:layout_toRightOf="@+id/id_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_radio1" />
+
+        <RadioButton
+            android:text="女"
+            android:layout_toRightOf="@+id/id_radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_radio2" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background">
+        <TextView
+            android:id="@+id/id_year"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="出生年月"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_toRightOf="@+id/id_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入出生年月"
+            android:textSize="15dp"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background">
+        <TextView
+            android:text="身份"
+            android:padding="10dp"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_card"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:text="男"
+            android:layout_toRightOf="@+id/id_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_radio3" />
+
+        <RadioButton
+            android:text="女"
+            android:layout_toRightOf="@+id/id_radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_radio4" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background">
+        <TextView
+            android:id="@+id/id_number"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="手机号码"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_toRightOf="@+id/id_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请输入11位手机号码"
+            android:textSize="15dp"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你的特长："
+            android:textSize="20dp"
+            android:padding="10dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你有多少工作经验："
+            android:textSize="20dp"
+            android:padding="10dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+    </RelativeLayout>
+
+    <Button
+        android:text="完成并报名"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_btn"
+        android:background="@drawable/green"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+
+</LinearLayout>
+

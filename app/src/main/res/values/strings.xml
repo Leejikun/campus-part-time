@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">校园兼职</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="spinner1">
+        <item>小学教学1</item>
+        <item>小学教学2</item>
+        <item>小学教学3</item>
+    </string-array>
+    <string-array name="spinner2">
+        <item>初中教学1</item>
+        <item>初中教学2</item>
+        <item>初中教学3</item>
+        <item>初中教学4</item>
+        <item>初中教学5</item>
+    </string-array>
+    <string-array name="spinner3">
+        <item>高中教学1</item>
+        <item>高中教学2</item>
+        <item>高中教学3</item>
+        <item>高中教学4</item>
+    </string-array>
+</resources>

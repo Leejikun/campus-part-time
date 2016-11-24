@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="@color/theme"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:text="校园兼职APP介绍"/>
+
+    <TextView
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="60dp"
+        android:textStyle="bold"
+        android:lineSpacingExtra="10dp"
+        android:background="@drawable/jianjie"
+        android:textColor="#090504"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:text="\t\t\t\t校园兼职职能介绍
+新兼职APP是一款定位于在校大学生兼职，辅以校园街（校内物品交易）、交友以及大学资讯为主要内容的大学生应用APP，该APP共搭建了三种平台:分别为兼职平台、校园街平台、资讯平台，致力于为大学生提供真实、好玩、实用的生活与服务。\n
+校园兼职功能特色\n
+[真实靠谱的信息] 兼职信息经过四重审核，确保真实靠谱！\n
+[丰富齐全的兼职]信息种类齐全，既可满足学生进行社会实践，锻炼自我，也可满足蓝领求职找工作！\n
+[便捷贴心的服务]我们根据用户的习惯为用户匹配可能感兴趣的兼职，提高你的浏览效率！"
+        android:textSize="13dp"
+        />
+</LinearLayout>
+
