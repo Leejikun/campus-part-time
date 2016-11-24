@@ -17,30 +17,51 @@
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="分类"
+                    android:textSize="18dp"
+                    android:textColor="#444444"
+                    android:layout_marginBottom="5dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#059422"></LinearLayout>
+            </LinearLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp">
+                android:layout_height="46dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
                 <ImageView
                     android:id="@+id/sort_img1"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:src="@drawable/b1"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="家教类"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_toRightOf="@id/sort_img1"
                     android:layout_centerVertical="true"
                     android:textColor="#000000"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/b6"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:background="#ffffff"/>
+                    android:background="#ffffff"
+                    android:layout_marginRight="5dp" />
             </RelativeLayout>
             <View
                 android:layout_width="match_parent"
@@ -53,28 +74,33 @@
                 android:layout_below="@+id/mysort"/>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingTop="10dp">
+                android:layout_height="46dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
                 <ImageView
                     android:id="@+id/sort_img2"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
                     android:src="@drawable/b2"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="服务类"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_toRightOf="@id/sort_img2"
                     android:layout_centerVertical="true"
                     android:textColor="#000000"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/b6"
                     android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true" />
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp" />
             </RelativeLayout>
             <View
                 android:layout_width="match_parent"
@@ -87,28 +113,32 @@
                 android:layout_below="@+id/id_myself_myshop"/>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingTop="10dp">
+                android:layout_height="46dp"
+                android:paddingTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp">
                 <ImageView
                     android:id="@+id/sort_img3"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
                     android:src="@drawable/b3"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="生活类"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_toRightOf="@id/sort_img3"
                     android:layout_centerVertical="true"
                     android:textColor="#000000"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/b6"
                     android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true" />
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp" />
             </RelativeLayout>
             <View
                 android:layout_width="match_parent"
@@ -121,28 +151,32 @@
                 android:layout_below="@+id/id_myself_myshop"/>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingTop="10dp">
+                android:layout_height="46dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
                 <ImageView
                     android:id="@+id/sort_img4"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
                     android:src="@drawable/b4"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="宣传类"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_toRightOf="@id/sort_img4"
                     android:layout_centerVertical="true"
                     android:textColor="#000000"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/b6"
                     android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true" />
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp" />
             </RelativeLayout>
             <View
                 android:layout_width="match_parent"
@@ -155,28 +189,32 @@
                 android:layout_below="@+id/id_myself_myshop"/>
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingTop="10dp">
+                android:layout_height="46dp"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
                 <ImageView
                     android:id="@+id/sort_img5"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
                     android:src="@drawable/b5"
-                    android:layout_centerVertical="true"/>
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="13dp" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="长期兼职"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:layout_toRightOf="@id/sort_img5"
                     android:layout_centerVertical="true"
                     android:textColor="#000000"/>
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:src="@drawable/b6"
                     android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true" />
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp" />
             </RelativeLayout>
             <View
                 android:layout_width="match_parent"

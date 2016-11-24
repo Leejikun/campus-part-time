@@ -18,65 +18,100 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <TextView
+            android:layout_marginBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="校园兼职"
-            android:textColor="#fdfdfd"
+            android:textSize="16dp"
+            android:textColor="#dddddd"
             android:gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#333333"></LinearLayout>
         <ImageView
             android:layout_width="120dp"
-            android:layout_height="150dp"
-            android:background="@drawable/qq"
-            android:layout_gravity="center"/>
+            android:layout_height="120dp"
+            android:background="@drawable/icon_tx"
+            android:layout_gravity="center"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="35dp" />
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:text="请输入用户名："
-                android:textColor="#fdfdfd"/>
+                android:text="用户名"
+                android:textColor="#fdfdfd"
+                android:textSize="17dp"/>
             <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="请输入用户名"/>
+                android:layout_height="45dp"
+                android:hint="账号/手机/邮箱"
+                android:textColorHint="#DDEEDD"
+                android:textColor="#fefefe"
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:textSize="17dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="75dp"
                 android:layout_height="wrap_content"
-                android:text="请输入密码："
-                android:textColor="#fdfdfd"/>
+                android:text="密码"
+                android:textColor="#fdfdfd"
+                android:textSize="17dp"/>
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="请输入密码"/>
+                android:hint="请输入密码"
+                android:textColorHint="#DDEEDD"
+                android:textColor="#eeeeee"
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:password="true"
+                android:textSize="17dp"/>
         </LinearLayout>
+
+        <Button
+            android:id="@+id/id_denglu_dlbtn"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="#52be56"
+            android:text="登录"
+            android:textColor="#fdfdfd"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="13dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+        <Button
+            android:id="@+id/id_denglu_zcbtn"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:background="#52be56"
+            android:text="注册"
+            android:textColor="#fdfdfd"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
         <TextView
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="忘记密码？"
             android:gravity="right"
-            android:textColor="#fdfdfd"/>
-        <Button
-            android:id="@+id/id_denglu_dlbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#52be56"
-            android:text="登录"
-            android:textColor="#fdfdfd"/>
-        <Button
-            android:id="@+id/id_denglu_zcbtn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#52be56"
-            android:text="注册"
-            android:textColor="#fdfdfd"
-            android:layout_marginTop="10dp"/>
+            android:textColor="#CCFF00"/>
     </LinearLayout>
 
     <LinearLayout
