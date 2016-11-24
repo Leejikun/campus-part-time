@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.administrator.practicaltraining.ActivityLogin"
-    android:orientation="vertical"
-    android:background="@drawable/back">
+    android:orientation="vertical">
+    //android:background="@drawable/back">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,8 +13,8 @@
         <ImageButton
             android:id="@+id/fanhui"
             android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/fanhui"/>
+            android:layout_height="32dp"/>
+            //android:src="@drawable/fanhui"/>
         <TextView
             android:textColor="#010101"
             android:gravity="center"
@@ -25,8 +25,8 @@
     </LinearLayout>
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/loginback"/>
+        android:layout_height="wrap_content"/>
+       // android:src="@drawable/loginback"/>
     <TabHost
         android:id="@+id/tabhost"
         android:layout_width="match_parent"
