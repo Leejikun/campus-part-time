@@ -1,36 +1,24 @@
 package com.example.administrator.practicaltraining;
 
-import android.app.Activity;
-import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+import android.view.LayoutInflater;
+import android.widget.TabHost;
 
-/**
- * Created by Administrator on 2016/11/22.
- */
-public class ActivityLogin extends Activity {
+public class ActivityLogin extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
-        Button denglubtn=(Button)findViewById(R.id.id_denglu_dlbtn);
-        denglubtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent= new Intent();
-                intent.setClass(ActivityLogin.this,ActivityMyself.class);
-                startActivity(intent);
-            }
-        });
-        Button zhucebtn=(Button)findViewById(R.id.id_denglu_zcbtn);
-        zhucebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent= new Intent();
-                intent.setClass(ActivityLogin.this,ActivityRegister.class);
-                startActivity(intent);
-            }
-        });
+        setContentView(R.layout.activity_activity_login);
+        TabHost tab = (TabHost)findViewById(R.id.tabhost);
+        tab.setup();  //初始化TabHost容器
+
+        LayoutInflater i= LayoutInflater.from(this);
+        i.inflate(R.layout.tab1, tab.getTabContentView());  //找到tab1布局，设置为Tab视图
+        i.inflate(R.layout.tab2, tab.getTabContentView());  //找到tab2布局，设置为Tab视图
+
+        tab.addTab(tab.newTabSpec("tab1").setIndicator("手机号登录").setContent(R.id.tab1));
+        tab.addTab(tab.newTabSpec("tab2").setIndicator("密码登录").setContent(R.id.tab2));
     }
 }

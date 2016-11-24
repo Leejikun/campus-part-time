@@ -15,12 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityMessage"/>
-        <activity android:name=".ActivityMyself"/>
-        <activity android:name=".ActivityHomepage"/>
-        <activity android:name=".ActivityClassification"/>
-        <activity android:name=".ActivityRegister"/>
-        <activity android:name=".ActivityLogin"/>
+        <activity android:name=".ActivityMessage" />
+        <activity android:name=".ActivityMyself" />
+        <activity android:name=".ActivityHomepage" />
+        <activity android:name=".ActivityClassification" />
+        <activity android:name=".ActivityRegister" />
+        <activity android:name=".ActivityLogin"></activity>
     </application>
 
 </manifest>
