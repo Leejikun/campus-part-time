@@ -5,6 +5,7 @@
     android:id="@+id/tab2"
     android:orientation="vertical">
     <EditText
+        android:id="@+id/tab2moblenumber"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="200dp"
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="请输入11位手机号"/>
     <EditText
+        android:id="@+id/tab2password"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
