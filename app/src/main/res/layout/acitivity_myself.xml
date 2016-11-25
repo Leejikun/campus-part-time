@@ -107,6 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="30dp"/>
     <RelativeLayout
+        android:id="@+id/callme"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingTop="10dp"
@@ -139,11 +140,13 @@
         style="@style/PersonalLine"
         android:layout_below="@+id/id_myself_myshop"/>
     <RelativeLayout
+        android:id="@+id/yijianfankui"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
+
             android:layout_marginLeft="20.0dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -165,11 +168,13 @@
         style="@style/PersonalLine"
         android:layout_below="@+id/id_myself_myshop"/>
     <RelativeLayout
+        android:id="@+id/forus"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
+
             android:layout_marginLeft="20.0dip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
