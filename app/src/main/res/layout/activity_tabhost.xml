@@ -20,17 +20,16 @@
             android:visibility="gone"/>
         <RadioGroup
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="52dp"
             android:gravity="center_vertical"
             android:layout_gravity="bottom"
             android:orientation="horizontal"
             android:id="@+id/tabhost_radiogroup"
-            android:background="@drawable/maintab_back">
+            android:background="@drawable/bg_tab">
             <RadioButton
                 android:checked="true"
                 android:id="@+id/tabhost_radio_button0"
                 android:tag="radio_button0"
-                android:layout_marginTop="2.0dip"
                 android:text="首页"
                 android:textColor="#000000"
                 android:textSize="12dp"
@@ -39,7 +38,6 @@
             <RadioButton
                 android:id="@+id/tabhost_radio_button1"
                 android:tag="radio_button1"
-                android:layout_marginTop="2.0dip"
                 android:text="分类"
                 android:textSize="12dp"
                 android:textColor="#000000"
@@ -48,7 +46,6 @@
             <RadioButton
                 android:id="@+id/tabhost_radio_button2"
                 android:tag="radio_button2"
-                android:layout_marginTop="2.0dip"
                 android:text="消息"
                 android:textSize="12dp"
                 android:textColor="#000000"
@@ -57,7 +54,6 @@
             <RadioButton
                 android:id="@+id/tabhost_radio_button3"
                 android:tag="radio_button3"
-                android:layout_marginTop="2.0dip"
                 android:text="我的"
                 android:textSize="12dp"
                 android:textColor="#000000"
