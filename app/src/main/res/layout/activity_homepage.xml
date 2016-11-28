@@ -8,12 +8,14 @@
     android:orientation="vertical">
 
 
+
     <LinearLayout
         android:focusable="true"
         android:focusableInTouchMode="true"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@color/theme">
+        android:background="@color/theme"
+        android:id="@+id/head">
 
         <TextView
             android:layout_width="wrap_content"

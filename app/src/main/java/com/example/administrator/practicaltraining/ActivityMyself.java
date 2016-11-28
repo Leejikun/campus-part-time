@@ -103,7 +103,12 @@ public class ActivityMyself extends Activity {
          public void onClick(View v) {
              PopupMenu popup=new PopupMenu(ActivityMyself.this,moreMenu);
              popup.getMenuInflater().inflate(R.menu.menu,popup.getMenu());
+             popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+                 public boolean onMenuItemClick(MenuItem item) {
 
+                     return true;
+                 }
+             });
              popup.show();
          }
      });
