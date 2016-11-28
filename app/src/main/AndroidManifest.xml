@@ -25,6 +25,7 @@
         <activity android:name=".ActivityLogin" />
         <activity android:name=".ActivityAppintorduce" />
         <activity android:name=".ActivityFeedback" />
+        <activity android:name=".ActivityHometeacher"/>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
