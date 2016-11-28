@@ -1,56 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+<LinearLayout
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
-        android:background="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="兼职详情"
+        android:background="@color/theme"
         android:textSize="33dp"
         android:gravity="center"/>
     <LinearLayout
         android:background="#f0f0f0"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
+            android:id="@+id/workName"
             android:layout_marginLeft="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="发单员"
-            android:textSize="30dp"/>
-        <LinearLayout
+            android:textSize="20dp"/>
+        <TableLayout
             android:layout_marginLeft="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="/"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="right"
-                android:textSize="20dp"
-                android:background="#e6600e"
-                android:textColor="#ffffff"
-                android:text="10元/小时"
-                android:layout_marginLeft="100dp" />
-        </LinearLayout>
+            <TableRow>
+                <TextView
+                    android:id="@+id/have"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+                <TextView
+                    android:id="@+id/allNeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"/>
+
+            </TableRow>
+        </TableLayout>
     </LinearLayout>
+    <TableLayout
+        android:background="#f0f0f0"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a6a4a6"
+                android:text="支付方式："
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/howPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="" />
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#a6a4a6"
+                android:text="工资："
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/wages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:text="小食堂" />
+        </TableRow>
+    </TableLayout>
     //工作时间地点
     <TableLayout
         android:background="#f0f0f0"
@@ -67,6 +107,7 @@
                 android:text="工作时间:"
                 android:textSize="16dp"/>
             <TextView
+                android:id="@+id/workTime"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
@@ -83,6 +124,7 @@
                 android:text="工作地点："
                 android:textSize="16dp"/>
             <TextView
+                android:id="@+id/workPlace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15dp"
@@ -107,6 +149,7 @@
             android:textColor="#a6a4a6"
             android:textSize="16dp"/>
         <TextView
+            android:id="@+id/workNeed"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -134,6 +177,7 @@
             android:textColor="#a6a4a6"
             android:textSize="16dp"/>
         <TextView
+            android:id="@+id/workDescribe"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="20dp"
@@ -143,6 +187,36 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="人员踏实干活，年龄18~45周岁工作轻松，工资有保障，干完就发"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    //兼职发布单位
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="#f0f0f0"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="兼职发布单位："
+            android:textColor="#a6a4a6"
+            android:textSize="16dp"/>
+        <TextView
+            android:id="@+id/workRelease"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:singleLine="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
             android:textSize="16dp"/>
     </LinearLayout>
     //报名截止日期
@@ -173,3 +247,4 @@
         android:layout_height="wrap_content"
         android:text="报名参加"/>
 </LinearLayout>
+</ScrollView>
