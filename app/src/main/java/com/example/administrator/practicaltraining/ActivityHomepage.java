@@ -19,11 +19,13 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 //----
 public class ActivityHomepage extends Activity {
@@ -123,6 +125,26 @@ public class ActivityHomepage extends Activity {
         mData = getData();
         MyAdapter adapter2 = new MyAdapter(this);
         listView.setAdapter(adapter2);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent();
+                intent.setClass(getBaseContext(),Activitydetails.class);
+                Bundle bundle = new Bundle();
+                bundle.putInt("image", (Integer) mData.get(position).get("img"));
+                bundle.putString("title", (String)mData.get(position).get("title"));
+                bundle.putString("info", (String)mData.get(position).get("info"));
+                bundle.putString("address", (String)mData.get(position).get("address"));
+                bundle.putString("workTime", (String)mData.get(position).get("workTime"));
+                bundle.putString("howPay", (String)mData.get(position).get("howPay"));
+                bundle.putString("wages", (String)mData.get(position).get("wages"));
+                //  bundle.putString("title1", titles1[i]);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                Toast.makeText(getApplicationContext(), (String)mData.get(position).get("title"), Toast.LENGTH_LONG).show();
+            }
+        });
 
     }
     // ------------------------Listview---------------------------
@@ -358,3 +380,5 @@ public class ActivityHomepage extends Activity {
     }
 
 }
+
+
