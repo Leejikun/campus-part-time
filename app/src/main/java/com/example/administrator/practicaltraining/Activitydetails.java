@@ -48,7 +48,6 @@ public class Activitydetails extends AppCompatActivity {
         workNeed =(TextView) findViewById(R.id.workNeed);
         workDescribe =(TextView) findViewById(R.id.workDescribe);
         howPay =(TextView) findViewById(R.id.howPay);
-        have =(TextView) findViewById(R.id.have);
         wages =(TextView) findViewById(R.id.wages);
         allNeed =(TextView) findViewById(R.id.allNeed);
     }
