@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.PopupMenu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -16,6 +18,8 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.io.File;
+
 /**
  * Created by Administrator on 2016/11/22.
  */
@@ -25,6 +29,8 @@ public class ActivityMyself extends Activity {
     private RelativeLayout relativeLayout;
     private RelativeLayout relativeLayout1;
     private RelativeLayout relativeLayout2;
+    private RelativeLayout relativeLayout3;
+    private File file;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -69,7 +75,7 @@ public class ActivityMyself extends Activity {
             public void onClick(View v) {
                 Intent i = new Intent();
                 i.setAction(Intent.ACTION_CALL);
-                i.setData(Uri.parse("tel:1234567890"));
+                i.setData(Uri.parse("tel:15231115833"));
                 startActivity(i);
             }
         });
@@ -91,6 +97,16 @@ public class ActivityMyself extends Activity {
                 AdBuilder.show();
             }
         });
+        final RelativeLayout moreMenu =(RelativeLayout)findViewById(R.id.share);
+     moreMenu.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+             PopupMenu popup=new PopupMenu(ActivityMyself.this,moreMenu);
+             popup.getMenuInflater().inflate(R.menu.menu,popup.getMenu());
+
+             popup.show();
+         }
+     });
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();

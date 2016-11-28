@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
+       <item
+           android:id="@+id/menu_1"
+           android:title="分享到朋友圈"
+           ></item>
+       <item
+           android:id="@+id/menu_2"
+           android:title="分享到QQ空间">
 
-        android:title="Settings"/>
+       </item>
+    <item android:id="@+id/menu_3"
+        android:title="分享到微博">
+
+    </item>
+
 
 </menu>
