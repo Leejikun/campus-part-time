@@ -22,6 +22,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -51,6 +52,7 @@ public class ActivityHomepage extends Activity {
             "传递有价值的信息",
             "带你飞"
     };
+    private LinearLayout linearLayout;
     private TextView title;
     private ViewPagerAdapter adapter;
     private ScheduledExecutorService scheduledExecutorService;
@@ -61,6 +63,17 @@ public class ActivityHomepage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+        linearLayout=(LinearLayout)findViewById(R.id.head);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent i=new Intent();
+                i.setClass(ActivityHomepage.this,map.class);
+                startActivity(i);
+
+            }
+        });
         mViewPaper = (ViewPager) findViewById(R.id.vp);
 
         //显示的图片
