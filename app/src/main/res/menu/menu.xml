@@ -3,7 +3,7 @@
        <item
 
            android:id="@+id/menu_1"
-           android:title="分享到朋友圈"
+           android:title="分享给微信好友"
            ></item>
        <item
            android:id="@+id/menu_2"
