@@ -32,6 +32,7 @@ public class ActivityMyself extends Activity {
     private RelativeLayout relativeLayout2;
     private RelativeLayout relativeLayout3;
     private File file;
+    private CircleImageView imageView;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -42,8 +43,8 @@ public class ActivityMyself extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitivity_myself);
-        textView = (TextView) findViewById(R.id.TextView02);
-        textView.setOnClickListener(new View.OnClickListener() {
+        imageView = (CircleImageView) findViewById(R.id.touxiang);
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();

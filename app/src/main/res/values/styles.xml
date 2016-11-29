@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="PersonalLine">
-        <item name="android:background">#ffcccccc</item>
+        <item name="android:background">#ffccccaa</item>
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">1.0dip</item>
     </style>
