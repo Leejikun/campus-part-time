@@ -148,7 +148,7 @@ public class ActivityHomepage extends Activity {
 
     }
     // ------------------------Listview---------------------------
-    public final class ViewHolder{
+    public final static class ViewHolder{
         public ImageView img;
         public TextView title;
         public TextView info;
