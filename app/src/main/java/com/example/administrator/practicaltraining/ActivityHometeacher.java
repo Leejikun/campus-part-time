@@ -23,11 +23,18 @@ import java.util.Map;
 
 
 public class ActivityHometeacher extends Activity {
+    private TextView name;
     private ListView listView;
     private List<Map<String, Object>> mData;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hometeacher);
+        name=(TextView)findViewById(R.id.name);
+        Intent intent=getIntent();
+        Bundle bundle=intent.getExtras();
+
+        String name1=bundle.getString("name");
+        name.setText(name1);
 
         listView = (ListView) findViewById(R.id.lv_fl);
         mData = getData();
