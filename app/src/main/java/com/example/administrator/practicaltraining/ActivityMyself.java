@@ -74,10 +74,22 @@ public class ActivityMyself extends Activity {
         relativeLayout2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent();
-                i.setAction(Intent.ACTION_CALL);
-                i.setData(Uri.parse("tel:15231115833"));
-                startActivity(i);
+                AlertDialog.Builder AdBuilder = new AlertDialog.Builder(ActivityMyself.this);
+                AdBuilder.setTitle("<(＾－＾)>");
+                AdBuilder.setMessage("您将要拨打电话至15231115833");
+                AdBuilder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Intent i = new Intent();
+                        i.setAction(Intent.ACTION_CALL);
+                        i.setData(Uri.parse("tel:15231115833"));
+                        startActivity(i);
+                    }
+                });
+                AdBuilder.setNegativeButton("取消", null);
+                AdBuilder.create();
+                AdBuilder.show();
+
             }
         });
         button = (Button) findViewById(R.id.id_myself_tcbtn);
