@@ -51,6 +51,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="13dp" />
                 <TextView
+                    android:id="@+id/teacher"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="家教类"
@@ -91,6 +92,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="13dp" />
                 <TextView
+                    android:id="@+id/server"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="服务类"
@@ -131,6 +133,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="13dp" />
                 <TextView
+                    android:id="@+id/life"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="生活类"
@@ -170,6 +173,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="13dp" />
                 <TextView
+                    android:id="@+id/xuanch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="宣传类"
@@ -209,6 +213,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="13dp" />
                 <TextView
+                    android:id="@+id/longparttime"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="长期兼职"

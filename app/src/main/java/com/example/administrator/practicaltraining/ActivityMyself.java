@@ -27,11 +27,13 @@ import java.io.File;
 public class ActivityMyself extends Activity {
     private Button button;
     private TextView textView;
+    private TextView mypt;
     private RelativeLayout relativeLayout;
     private RelativeLayout relativeLayout1;
     private RelativeLayout relativeLayout2;
     private RelativeLayout relativeLayout3;
     private File file;
+    private CircleImageView imageView;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -42,14 +44,23 @@ public class ActivityMyself extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitivity_myself);
-        textView = (TextView) findViewById(R.id.TextView02);
-        textView.setOnClickListener(new View.OnClickListener() {
+        imageView = (CircleImageView) findViewById(R.id.touxiang);
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(ActivityMyself.this, ActivityLogin.class);
                 startActivity(intent);
 
+            }
+        });
+        mypt = (TextView) findViewById(R.id.mypt);
+        mypt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(ActivityMyself.this,ActivityMyparttime.class);
+                startActivity(intent);
             }
         });
         relativeLayout = (RelativeLayout) findViewById(R.id.forus);
