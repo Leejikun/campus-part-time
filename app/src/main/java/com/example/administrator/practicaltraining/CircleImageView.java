@@ -1,8 +1,5 @@
 package com.example.administrator.practicaltraining;
 
-/**
- * Created by 王先生 on 2016/11/29.
- */
 
 
 import android.content.Context;
