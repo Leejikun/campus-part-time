@@ -2,6 +2,21 @@
     <string name="app_name">校园兼职</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="text">填写资料验证信息，可更快上岗并确保工资到账</string>
+    <string name="极速报名">极速报名</string>
+    <string name="姓名">姓名</string>
+    <string name="请输入真实姓名">请输入真实姓名</string>
+    <string name="性别">性别</string>
+    <string name="完成并报名">完成并报名</string>
+    <string name="text1">你的特长：</string>
+    <string name="text2">你有过什么工作经验</string>
+    <string name="请输入11位手机号码">请输入11位手机号码</string>
+    <string name="手机号码">手机号码</string>
+    <string name="女">女</string>
+    <string name="男">男</string>
+    <string name="身份">身份</string>
+    <string name="请输入出生年月">请输入出生年月</string>
+    <string name="出生年月">出生年月</string>
     <string-array name="spinner1">
         <item>小学教学1</item>
         <item>小学教学2</item>
