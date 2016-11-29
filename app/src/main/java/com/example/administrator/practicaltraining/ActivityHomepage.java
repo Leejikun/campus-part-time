@@ -148,7 +148,7 @@ public class ActivityHomepage extends Activity {
 
     }
     // ------------------------Listview---------------------------
-    public final class ViewHolder{
+    public final static class ViewHolder{
         public ImageView img;
         public TextView title;
         public TextView info;
@@ -350,8 +350,8 @@ public class ActivityHomepage extends Activity {
         scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
         scheduledExecutorService.scheduleWithFixedDelay(
                 new ViewPageTask(),
-                2,
-                2,
+                4,
+                4,
                 TimeUnit.SECONDS);
     }
 
