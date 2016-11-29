@@ -1,6 +1,7 @@
 package com.example.administrator.practicaltraining;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
@@ -105,7 +106,17 @@ public class ActivityMyself extends Activity {
              popup.getMenuInflater().inflate(R.menu.menu,popup.getMenu());
              popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
                  public boolean onMenuItemClick(MenuItem item) {
-
+                     switch (item.getItemId()){
+                         case R.id.menu_1:
+                             Intent intent = new Intent();
+                             ComponentName comp = new ComponentName("com.tencent.mm",
+                                     "com.tencent.mm.ui.tools.ShareImgUI");
+                             intent.setComponent(comp);
+                             intent.setAction("android.intent.action.SEND");
+                             intent.setType("image/*");
+                             intent.putExtra(Intent.EXTRA_TEXT,"校园兼职APP火爆上线了啦，再也不用担心找不到合适的工作！方便你我他");
+                             startActivity(intent);
+                     }
                      return true;
                  }
              });
