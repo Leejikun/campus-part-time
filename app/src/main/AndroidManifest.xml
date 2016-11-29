@@ -44,6 +44,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".Activitydetails" />
+        <activity android:name=".ActivityMyparttime"></activity>
     </application>
 
 </manifest>

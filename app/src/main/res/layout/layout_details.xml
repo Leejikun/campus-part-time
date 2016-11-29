@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/android_layout_bg">
     <TextView
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="兼职详情"
@@ -40,7 +40,7 @@
             android:textSize="25dp"/>
         <TableLayout
             android:paddingLeft="20dp"
-            android:paddingTop="10dp"
+            android:paddingTop="17dp"
             android:paddingBottom="10dp"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -297,7 +297,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#ff0000"
-        android:text="报名参加"/>
+        android:text="报名参加"
+        android:textSize="17dp"
+        android:textColor="#ffffff"/>
 
     </LinearLayout>
     </ScrollView>

@@ -27,6 +27,7 @@ import java.io.File;
 public class ActivityMyself extends Activity {
     private Button button;
     private TextView textView;
+    private TextView mypt;
     private RelativeLayout relativeLayout;
     private RelativeLayout relativeLayout1;
     private RelativeLayout relativeLayout2;
@@ -50,6 +51,15 @@ public class ActivityMyself extends Activity {
                 intent.setClass(ActivityMyself.this, ActivityLogin.class);
                 startActivity(intent);
 
+            }
+        });
+        mypt = (TextView) findViewById(R.id.mypt);
+        mypt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent();
+                intent.setClass(ActivityMyself.this,ActivityMyparttime.class);
+                startActivity(intent);
             }
         });
         relativeLayout = (RelativeLayout) findViewById(R.id.forus);
