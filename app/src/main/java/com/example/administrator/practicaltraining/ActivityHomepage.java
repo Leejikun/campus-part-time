@@ -350,8 +350,8 @@ public class ActivityHomepage extends Activity {
         scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
         scheduledExecutorService.scheduleWithFixedDelay(
                 new ViewPageTask(),
-                2,
-                2,
+                4,
+                4,
                 TimeUnit.SECONDS);
     }
 
