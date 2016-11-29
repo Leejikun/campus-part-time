@@ -1,9 +1,10 @@
 package com.example.administrator.practicaltraining;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ImageView;
+import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Activitydetails extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class Activitydetails extends AppCompatActivity {
     public TextView have;
     public TextView wages;
     public TextView allNeed;
+    private Button sign_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +40,15 @@ public class Activitydetails extends AppCompatActivity {
         howPay.setText(howpay);
         wages.setText(wages1);
         workPlace.setText(address);
+        sign_button = (Button)findViewById(R.id.sign);
+        sign_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(Activitydetails.this,ActivitySign.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

@@ -21,11 +21,10 @@
         android:textSize="15sp" />
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/background">
+        android:layout_height="50dp">
         <TextView
             android:id="@+id/id_name"
-            android:layout_width="120dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:text="@string/姓名"
             android:padding="10dp"
@@ -38,14 +37,17 @@
             android:textSize="15sp"
             android:layout_alignParentTop="true" />
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/background">
+        android:layout_height="50dp">
         <TextView
             android:text="@string/性别"
             android:padding="10dp"
-            android:layout_width="120dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/id_sex"
             android:textSize="20sp"/>
@@ -55,23 +57,28 @@
             android:layout_toEndOf="@+id/id_sex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_radio1" />
+            android:id="@+id/id_radio1"
+            android:focusable="false"/>
 
         <RadioButton
             android:text="@string/女"
             android:layout_toEndOf="@+id/id_radio1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_radio2" />
+            android:id="@+id/id_radio2"
+            android:focusable="false"/>
 
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/background">
+        android:layout_height="50dp">
         <TextView
             android:id="@+id/id_year"
-            android:layout_width="120dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="@string/出生年月"
@@ -84,40 +91,48 @@
             android:textSize="15sp"
             android:layout_alignParentTop="true" />
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/background">
+        android:layout_height="50dp">
         <TextView
             android:text="@string/身份"
             android:padding="10dp"
-            android:layout_width="120dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/id_card"
             android:textSize="20sp"/>
 
         <RadioButton
-            android:text="@string/男"
+            android:text="@string/学生"
             android:layout_toEndOf="@+id/id_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_radio3" />
+            android:id="@+id/id_radio3"
+            android:focusable="false"/>
 
         <RadioButton
-            android:text="@string/女"
+            android:text="@string/非学生"
             android:layout_toEndOf="@+id/id_radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_radio4" />
+            android:id="@+id/id_radio4"
+            android:focusable="false"/>
 
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
     <RelativeLayout
         android:layout_width="fill_parent"
-        android:layout_height="40dp"
-        android:background="@drawable/background">
+        android:layout_height="50dp">
         <TextView
             android:id="@+id/id_number"
-            android:layout_width="120dp"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:text="@string/手机号码"
@@ -131,11 +146,19 @@
             android:layout_alignParentTop="true" />
     </RelativeLayout>
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+    <View
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="5dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -143,38 +166,48 @@
             android:textSize="20sp"
             android:padding="10dp"/>
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint=""/>
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
     </RelativeLayout>
-
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+    <View
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/background"
-        android:layout_marginTop="30dp">
+        android:layout_marginTop="5dp">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text2"
             android:textSize="20sp"
             android:padding="10dp"/>
+
         <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint=""/>
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
 
     <Button
         android:text="@string/完成并报名"
         android:textColor="#FFFFFF"
+
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/id_btn"
         android:background="@drawable/green"
         android:layout_gravity="center"
         android:layout_marginTop="20dp" />
-
 
 </LinearLayout>
 

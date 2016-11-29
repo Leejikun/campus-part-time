@@ -9,7 +9,7 @@
     <string name="性别">性别</string>
     <string name="完成并报名">完成并报名</string>
     <string name="text1">你的特长：</string>
-    <string name="text2">你有过什么工作经验</string>
+    <string name="text2">你有过什么工作经验：</string>
     <string name="请输入11位手机号码">请输入11位手机号码</string>
     <string name="手机号码">手机号码</string>
     <string name="女">女</string>
@@ -17,6 +17,8 @@
     <string name="身份">身份</string>
     <string name="请输入出生年月">请输入出生年月</string>
     <string name="出生年月">出生年月</string>
+    <string name="学生">学生</string>
+    <string name="非学生">非学生</string>
     <string-array name="spinner1">
         <item>小学教学1</item>
         <item>小学教学2</item>
