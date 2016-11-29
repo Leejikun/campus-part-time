@@ -20,11 +20,11 @@ public class ActivityLogin extends AppCompatActivity {
         tab.setup();  //初始化TabHost容器
 
         LayoutInflater i= LayoutInflater.from(this);
-        i.inflate(R.layout.tab1, tab.getTabContentView());  //找到tab1布局，设置为Tab视图
-        i.inflate(R.layout.tab2, tab.getTabContentView());  //找到tab2布局，设置为Tab视图
+        i.inflate(R.layout.login_tab1, tab.getTabContentView());  //找到tab1布局，设置为Tab视图
+        i.inflate(R.layout.login_tab2, tab.getTabContentView());  //找到tab2布局，设置为Tab视图
 
-        tab.addTab(tab.newTabSpec("tab1").setIndicator("手机号登录").setContent(R.id.tab1));
-        tab.addTab(tab.newTabSpec("tab2").setIndicator("密码登录").setContent(R.id.tab2));
+        tab.addTab(tab.newTabSpec("login_tab1").setIndicator("手机号登录").setContent(R.id.tab1));
+        tab.addTab(tab.newTabSpec("login_tab2").setIndicator("密码登录").setContent(R.id.tab2));
 
         editText=(EditText)findViewById(R.id.moblenumber);
         editText.setOnClickListener(new View.OnClickListener() {
