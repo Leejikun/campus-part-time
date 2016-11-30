@@ -8,14 +8,14 @@
     android:orientation="vertical">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
         android:background="#ffffff">
         <ImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
             android:layout_alignParentLeft="true"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="11dp"
             android:background="@drawable/back"
             android:id="@+id/fk_back"/>
         <TextView
@@ -28,7 +28,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="#bbbbbb"
+            android:background="#f2f2f2"
             android:layout_alignParentBottom="true"></LinearLayout>
     </RelativeLayout>
     <TextView
