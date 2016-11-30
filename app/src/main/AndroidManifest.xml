@@ -47,5 +47,10 @@
         <activity android:name=".Activitydetails" />
         <activity android:name=".map"></activity>
     </application>
+    <service
+        android:name="com.baidu.location.f"
+        android:enabled="true"
+        android:process=":remote">
+    </service>
 
 </manifest>
