@@ -29,10 +29,10 @@ public class ActivityHometeacher extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hometeacher);
+
         name=(TextView)findViewById(R.id.name);
         Intent intent=getIntent();
         Bundle bundle=intent.getExtras();
-
         String name1=bundle.getString("name");
         name.setText(name1);
 
@@ -40,6 +40,7 @@ public class ActivityHometeacher extends Activity {
         mData = getData();
         MyAdapter adapter2 = new MyAdapter(this);
         listView.setAdapter(adapter2);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

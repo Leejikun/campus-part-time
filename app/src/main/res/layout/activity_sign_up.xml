@@ -12,49 +12,64 @@
         android:layout_width="fill_parent"
         android:layout_height="50dp"
         android:text="@string/极速报名"/>
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/text"
         android:gravity="center"
         android:textSize="15sp" />
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/id_name"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@string/姓名"
+            android:text="姓名:"
+            android:textColor="#404040"
             android:padding="10dp"
-            android:textSize="20sp"/>
+            android:textSize="17sp"/>
         <EditText
             android:layout_toEndOf="@+id/id_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/请输入真实姓名"
-            android:textSize="15sp"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
+            android:hint="请输入真实姓名"
+            android:background="@null"
+            android:textSize="15sp" />
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#ccc"/>
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="fill_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content">
+
         <TextView
+            android:id="@+id/id_sex"
             android:text="@string/性别"
+            android:textColor="#404040"
             android:padding="10dp"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:id="@+id/id_sex"
-            android:textSize="20sp"/>
-
+            android:textSize="17sp"/>
+        <RadioGroup
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <RadioButton
             android:text="@string/男"
-            android:layout_toEndOf="@+id/id_sex"
+            android:textColor="#808080"
+            android:textSize="17dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/id_radio1"
@@ -62,100 +77,109 @@
 
         <RadioButton
             android:text="@string/女"
-            android:layout_toEndOf="@+id/id_radio1"
+            android:textColor="#808080"
+            android:textSize="17dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/id_radio2"
             android:focusable="false"/>
+        </RadioGroup>
 
-    </RelativeLayout>
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#ccc"/>
-    <RelativeLayout
+    <LinearLayout
+        android:layout_gravity="center_vertical"
         android:layout_width="fill_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/id_year"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="@string/出生年月"
-            android:textSize="20sp"/>
+            android:text="出生年月:"
+            android:textColor="#404040"
+            android:textSize="17sp"/>
         <EditText
             android:layout_toEndOf="@+id/id_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/请输入出生年月"
-            android:textSize="15sp"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
+            android:background="@null"
+            android:textSize="15sp" />
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#ccc"/>
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content">
         <TextView
-            android:text="@string/身份"
+            android:text="身份:"
+            android:textColor="#404040"
             android:padding="10dp"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/id_card"
-            android:textSize="20sp"/>
-
+            android:textSize="17dp"/>
+        <RadioGroup
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
         <RadioButton
-            android:text="@string/学生"
-            android:layout_toEndOf="@+id/id_card"
+            android:text="学生"
+            android:textColor="#808080"
+            android:textSize="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/id_radio3"
             android:focusable="false"/>
-
         <RadioButton
             android:text="@string/非学生"
-            android:layout_toEndOf="@+id/id_radio3"
+            android:textColor="#808080"
+            android:textSize="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/id_radio4"
             android:focusable="false"/>
-
-    </RelativeLayout>
+        </RadioGroup>
+    </LinearLayout>
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#ccc"/>
-    <RelativeLayout
+    <LinearLayout
+        android:layout_gravity="center_vertical"
         android:layout_width="fill_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content">
         <TextView
             android:id="@+id/id_number"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="@string/手机号码"
-            android:textSize="20sp"/>
+            android:text="手机号码:"
+            android:textColor="#404040"
+            android:textSize="17dp"/>
         <EditText
-            android:layout_toEndOf="@+id/id_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="@string/请输入11位手机号码"
-            android:textSize="15sp"
-            android:layout_alignParentTop="true" />
-    </RelativeLayout>
+            android:background="@null"
+            android:textColor="#808080"
+            android:textSize="15sp" />
+    </LinearLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#ccc"/>
-    <View
-        android:layout_marginTop="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ccc"/>
-    <RelativeLayout
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp">
@@ -166,19 +190,19 @@
             android:textSize="20sp"
             android:padding="10dp"/>
         <EditText
+            android:gravity="top"
+            android:background="@null"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="100dp" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ccc"/>
-    <View
-        android:layout_marginTop="25dp"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ccc"/>
-    <RelativeLayout
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"/>
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp">
@@ -186,28 +210,28 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text2"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:padding="10dp"/>
 
         <EditText
+            android:gravity="top"
+            android:background="@null"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
             android:layout_width="match_parent"
             android:layout_height="100dp" />
-    </RelativeLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="#ccc"/>
+    </LinearLayout>
 
     <Button
         android:text="@string/完成并报名"
         android:textColor="#FFFFFF"
-
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:id="@+id/id_btn"
         android:background="@drawable/green"
         android:layout_gravity="center"
         android:layout_marginTop="20dp" />
-
+    </LinearLayout>
+</ScrollView>
 </LinearLayout>
 

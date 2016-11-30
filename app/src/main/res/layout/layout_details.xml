@@ -47,6 +47,7 @@
                     android:paddingRight="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="#404040"
                     android:text="ddd"/>
                 <View
                     android:layout_width="1dip"
@@ -60,6 +61,7 @@
                     android:paddingRight="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="#404040"
                     android:text="3"/>
                 <View
                     android:layout_width="1dip"
@@ -72,6 +74,7 @@
                     android:paddingLeft="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="#404040"
                     android:text="ddd"/>
 
             </TableRow>
@@ -91,7 +94,7 @@
                 android:paddingLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#a6a4a6"
+                android:textColor="#404040"
                 android:text="工作时间:"
                 android:textSize="17dp"/>
             <TextView
@@ -108,7 +111,7 @@
                 android:layout_marginLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#a6a4a6"
+                android:textColor="#404040"
                 android:text="工作地点："
                 android:textSize="17dp"/>
             <TextView
@@ -117,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="17dp"
                 android:textColor="#000000"
-                android:text="小食堂" />
+                android:text="" />
         </TableRow>
     </TableLayout>
     //薪资福利
@@ -131,7 +134,7 @@
                 android:paddingLeft="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#a6a4a6"
+                android:textColor="#404040"
                 android:text="薪资福利："
                 android:textSize="17dp"/>
         <TableRow
@@ -181,7 +184,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:text="人员要求"
-            android:textColor="#a6a4a6"
+            android:textColor="#404040"
             android:textSize="17dp"/>
         <TextView
             android:id="@+id/workNeed"
@@ -209,7 +212,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:text="工作描述："
-            android:textColor="#a6a4a6"
+            android:textColor="#404040"
             android:textSize="17dp"/>
         <TextView
             android:id="@+id/workDescribe"
@@ -222,7 +225,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="#000000"
-            android:text="人员踏实干活，年龄18~45周岁工作轻松，工资有保障，干完就发"
+            android:text="人员踏实干活，工作轻松，工资有保障"
             android:textSize="17dp"/>
     </LinearLayout>
     <View
@@ -243,7 +246,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="报名截止："
-            android:textColor="#a6a4a6"
+            android:textColor="#404040"
             android:textSize="17dp"/>
         <TextView
             android:id="@+id/stopTime"
@@ -270,7 +273,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:text="公司信息："
-            android:textColor="#a6a4a6"
+            android:textColor="#404040"
             android:textSize="17dp"/>
         <TextView
             android:id="@+id/workRelease"
@@ -282,9 +285,13 @@
     </LinearLayout>
     <Button
         android:id="@+id/sign"
-        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:textColor="#F58742"
         android:text="报名参加"/>
 </LinearLayout>
 </ScrollView>
