@@ -30,9 +30,18 @@ public class ActivityHometeacher extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hometeacher);
 
+        findViewById(R.id.fl_back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
         name=(TextView)findViewById(R.id.name);
         Intent intent=getIntent();
         Bundle bundle=intent.getExtras();
+
         String name1=bundle.getString("name");
         name.setText(name1);
 
