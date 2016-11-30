@@ -96,7 +96,6 @@ public class map extends AppCompatActivity {
                 }//if
             }
         });
-        mManager.addNearbyInfoListener(this);
     }//setListenersOnWidgets
 
 
@@ -211,7 +210,7 @@ public class map extends AppCompatActivity {
         mLocationClient = new LocationClient(getApplicationContext());
         mManager = RadarSearchManager.getInstance();
         mManager.setUserID(null);
-        mManager.startUploadAuto(this, 5000);
+
     }//getWidgetsReferences
 
 
@@ -289,7 +288,6 @@ public class map extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         mTextureMapView.onDestroy();
-        mManager.removeNearbyInfoListener(this);
         // 清除用户信息
         mManager.clearUserInfo();
         // 释放资源
