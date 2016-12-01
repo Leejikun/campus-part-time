@@ -27,7 +27,7 @@ import java.io.File;
 public class ActivityMyself extends Activity {
     private Button button;
     private TextView textView;
-    private TextView mypt;
+    private RelativeLayout mypt;
     private RelativeLayout relativeLayout;
     private RelativeLayout relativeLayout1;
     private RelativeLayout relativeLayout2;
@@ -54,7 +54,7 @@ public class ActivityMyself extends Activity {
 
             }
         });
-        mypt = (TextView) findViewById(R.id.mypt);
+        mypt = (RelativeLayout) findViewById(R.id.mypt);
         mypt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
