@@ -19,6 +19,7 @@
     <string name="出生年月">出生年月</string>
     <string name="学生">学生</string>
     <string name="非学生">非学生</string>
+    <string name="系统通知">系统通知</string>
     <string-array name="spinner1">
         <item>小学教学1</item>
         <item>小学教学2</item>
