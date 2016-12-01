@@ -13,6 +13,11 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
+    <service
+        android:name="com.baidu.location.f"
+        android:enabled="true"
+        android:process=":remote"></service>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/appimage"
@@ -45,12 +50,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".Activitydetails" />
-        <activity android:name=".map"></activity>
+        <activity android:name=".map" />
     </application>
-    <service
-        android:name="com.baidu.location.f"
-        android:enabled="true"
-        android:process=":remote">
-    </service>
 
 </manifest>
