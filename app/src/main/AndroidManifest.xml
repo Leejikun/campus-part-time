@@ -41,6 +41,7 @@
         <activity android:name=".ActivityFeedback" />
         <activity android:name=".ActivityHometeacher" />
         <activity android:name=".ActivitySign" />
+        <activity android:name=".ActivityMyparttime"/>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
