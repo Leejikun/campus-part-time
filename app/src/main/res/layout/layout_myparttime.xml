@@ -73,7 +73,7 @@
                 android:textSize="17dp"/>
     </LinearLayout>
     <ListView
-        android:id="@+id/lv"
+        android:id="@+id/lv_mypt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
     </ListView>
