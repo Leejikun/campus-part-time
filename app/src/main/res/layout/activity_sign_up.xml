@@ -32,7 +32,7 @@
             android:id="@+id/id_name"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="姓名:"
+            android:text="@string/姓名"
             android:textColor="#404040"
             android:padding="10dp"
             android:textSize="17sp"/>
@@ -40,7 +40,7 @@
             android:layout_toEndOf="@+id/id_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="请输入真实姓名"
+            android:hint="@string/请输入真实姓名"
             android:background="@null"
             android:textSize="15sp" />
     </LinearLayout>
@@ -69,7 +69,7 @@
         <RadioButton
             android:text="@string/男"
             android:textColor="#808080"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/id_radio1"
@@ -78,7 +78,7 @@
         <RadioButton
             android:text="@string/女"
             android:textColor="#808080"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/id_radio2"
@@ -99,7 +99,7 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="出生年月:"
+            android:text="@string/出生年月"
             android:textColor="#404040"
             android:textSize="17sp"/>
         <EditText
@@ -118,22 +118,22 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:text="身份:"
+            android:text="@string/身份"
             android:textColor="#404040"
             android:padding="10dp"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:id="@+id/id_card"
-            android:textSize="17dp"/>
+            android:textSize="17sp"/>
         <RadioGroup
             android:layout_gravity="center_vertical"
             android:orientation="horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
         <RadioButton
-            android:text="学生"
+            android:text="@string/学生"
             android:textColor="#808080"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/id_radio3"
@@ -141,7 +141,7 @@
         <RadioButton
             android:text="@string/非学生"
             android:textColor="#808080"
-            android:textSize="15dp"
+            android:textSize="15sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/id_radio4"
@@ -161,9 +161,9 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:text="手机号码:"
+            android:text="@string/手机号码"
             android:textColor="#404040"
-            android:textSize="17dp"/>
+            android:textSize="17sp"/>
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -177,6 +177,12 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#ccc"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            android:layout_marginTop="10dp"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -201,7 +207,13 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="#ccc"/>
-    <LinearLayout
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
