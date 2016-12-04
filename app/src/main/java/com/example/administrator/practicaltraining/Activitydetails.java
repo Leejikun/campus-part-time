@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Activitydetails extends AppCompatActivity {
+    public ImageView back;
     public TextView workName;
     public TextView workTime;
     public TextView workPlace;
@@ -49,10 +51,18 @@ public class Activitydetails extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        //返回上一页
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
     }
 
     public void setView(){
+        back=(ImageView)findViewById(R.id.back);
         workName =(TextView) findViewById(R.id.workName);
         workTime =(TextView) findViewById(R.id.workTime);
         workPlace =(TextView) findViewById(R.id.workPlace);

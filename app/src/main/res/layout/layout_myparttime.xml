@@ -3,16 +3,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/android_layout_bg">
-    <TextView
-        android:paddingTop="15dp"
-        android:paddingBottom="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="我的兼职"
-        android:textColor="#000000"
-        android:background="#ffffff"
-        android:textSize="20dp"
-        android:gravity="center"/>
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        style="@style/TopbarStyle" >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/back"/>
+        <TextView
+            android:id="@+id/name"
+            android:text="我的兼职"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size" />
+    </RelativeLayout>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_marginTop="2dp"

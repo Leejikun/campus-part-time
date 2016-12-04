@@ -25,6 +25,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class ActivityMyparttime extends AppCompatActivity {
+    private ImageView back;
     private ListView listView;
     private List<Map<String, Object>> mData;
     @Override
@@ -32,6 +33,14 @@ public class ActivityMyparttime extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_myparttime);
+        back=(ImageView)findViewById(R.id.back);
+        //返回上一页
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
         listView = (ListView) findViewById(R.id.lv_mypt);
 
