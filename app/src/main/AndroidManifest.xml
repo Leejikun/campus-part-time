@@ -13,6 +13,11 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
+    <service
+        android:name="com.baidu.location.f"
+        android:enabled="true"
+        android:process=":remote" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/appimage"
@@ -36,7 +41,9 @@
         <activity android:name=".ActivityFeedback" />
         <activity android:name=".ActivityHometeacher" />
         <activity android:name=".ActivitySign" />
+        <activity android:name=".ActivityMyparttime" />
         <activity android:name=".ActivityMyparttime"/>
+        <activity android:name=".ActivitySysteminforms"/>
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.

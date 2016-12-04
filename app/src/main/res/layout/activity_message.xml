@@ -206,7 +206,7 @@
                 android:layout_toRightOf="@+id/img_shake"
                 android:ellipsize="end"
                 android:singleLine="true"
-                android:text="摇啊摇"
+                android:text="大家一起来签到"
                 android:textColor="@color/black"
                 android:textSize="@dimen/medium_text_size" />
 

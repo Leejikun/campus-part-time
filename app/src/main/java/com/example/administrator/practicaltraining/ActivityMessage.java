@@ -15,12 +15,12 @@ public class ActivityMessage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_message);
-        relativeLayout=(RelativeLayout)findViewById(R.id.layout_story);
+        relativeLayout=(RelativeLayout)findViewById(R.id.layout_shake);
         relativeLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent();
-                intent.setClass(ActivityMessage.this,ActivitySysteminforms.class);
+                intent.setClass(ActivityMessage.this,ActivitySignin.class);
                 startActivity(intent);
             }
         });

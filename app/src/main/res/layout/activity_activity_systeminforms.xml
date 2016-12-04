@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.administrator.practicaltraining.ActivitySysteminforms"
     android:orientation="vertical"
-    android:background="@drawable/systeminformsbackground">
+    android:background="@drawable/systeminforms">
     <RelativeLayout
         android:id="@+id/layout_category_topbar"
         style="@style/TopbarStyle"
@@ -17,9 +17,9 @@
             android:layout_height="20dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="系统通知"
+            android:text="@string/系统通知"
             android:textColor="@color/black"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
     </RelativeLayout>
