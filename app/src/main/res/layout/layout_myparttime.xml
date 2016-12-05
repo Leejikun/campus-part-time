@@ -33,6 +33,7 @@
         android:paddingBottom="3dp"
         android:background="#ffffff">
             <TextView
+                android:id="@+id/allmypt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -47,6 +48,7 @@
                 android:layout_gravity="center"
                 />
             <TextView
+                android:id="@+id/signed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -61,6 +63,7 @@
             android:layout_gravity="center"
             />
             <TextView
+                android:id="@+id/accepted"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -75,6 +78,7 @@
             android:layout_gravity="center"
             />
             <TextView
+                android:id="@+id/ended"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

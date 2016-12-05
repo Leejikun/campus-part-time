@@ -1,14 +1,15 @@
 package com.example.administrator.practicaltraining;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class Activitydetails extends AppCompatActivity {
+public class Activitymypartyimedetailes extends AppCompatActivity {
+
     public ImageView back;
     public TextView workName;
     public TextView workTime;
@@ -22,11 +23,10 @@ public class Activitydetails extends AppCompatActivity {
     public TextView wages;
     public TextView allNeed;
     public TextView company;
-    private Button sign_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_details);
+        setContentView(R.layout.activity_mypartytime_detailes);
         setView();
         Intent intent=getIntent();
         Bundle bundle=intent.getExtras();
@@ -47,15 +47,7 @@ public class Activitydetails extends AppCompatActivity {
         wages.setText(wages1);
         workPlace.setText(address);
         company.setText(info);
-        sign_button = (Button)findViewById(R.id.sign);
-        sign_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(Activitydetails.this,ActivitySign.class);
-                startActivity(intent);
-            }
-        });
+
         //返回上一页
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,5 +71,4 @@ public class Activitydetails extends AppCompatActivity {
         company=(TextView) findViewById(R.id.company);
         allNeed =(TextView) findViewById(R.id.allNeed);
     }
-
 }
