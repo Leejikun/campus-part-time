@@ -1,8 +1,10 @@
 package com.example.administrator.practicaltraining;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 /**
@@ -11,6 +13,8 @@ import android.widget.ImageView;
 
 public class ActivitySign extends AppCompatActivity {
     public ImageView back;
+    private Button button;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,8 +26,19 @@ public class ActivitySign extends AppCompatActivity {
                 finish();
             }
         });
+        Button button=(Button)findViewById(R.id.id_btn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setClass(ActivitySign.this,Activityinformsuccessful.class);
+                startActivity(intent);
+            }
+        });
     }
-    public void  setView(){
-         back=(ImageView)findViewById(R.id.back);
+
+    public void setView() {
+        back = (ImageView) findViewById(R.id.back);
     }
 }
+

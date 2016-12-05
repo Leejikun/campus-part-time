@@ -17,6 +17,10 @@
         android:name="com.baidu.location.f"
         android:enabled="true"
         android:process=":remote" />
+    <service
+        android:name="com.baidu.location.f"
+        android:enabled="true"
+        android:process=":remote"></service>
 
     <application
         android:allowBackup="true"
@@ -42,8 +46,8 @@
         <activity android:name=".ActivityHometeacher" />
         <activity android:name=".ActivitySign" />
         <activity android:name=".ActivityMyparttime" />
-        <activity android:name=".ActivityMyparttime"/>
-        <activity android:name=".ActivitySysteminforms"/>
+        <activity android:name=".ActivityMyparttime" />
+        <activity android:name=".ActivitySysteminforms" />
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -53,12 +57,8 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".Activitydetails" />
-        <activity android:name=".map"></activity>
+        <activity android:name=".map" />
+        <activity android:name=".Activityinformsuccessful"></activity>
     </application>
-    <service
-        android:name="com.baidu.location.f"
-        android:enabled="true"
-        android:process=":remote">
-    </service>
 
 </manifest>
