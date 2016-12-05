@@ -26,7 +26,15 @@ public class ActivityMessage extends Activity {
                 startActivity(intent);
             }
         });
-        relativeLayout1 = (RelativeLayout) findViewById(R.id.layout_QR);
+        relativeLayout1 = (RelativeLayout) findViewById(R.id.layout_story);
+      relativeLayout1.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              Intent i= new Intent();
+              i.setClass(ActivityMessage.this,ActivitySysteminforms.class);
+              startActivity(i);
 
+          }
+      });
     }
 }
