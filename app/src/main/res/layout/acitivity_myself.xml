@@ -71,6 +71,7 @@
         style="@style/PersonalLine"
         android:layout_below="@+id/id_myself_myshop"/>
     <RelativeLayout
+        android:id="@+id/id_myself_publish"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:paddingTop="10dp"

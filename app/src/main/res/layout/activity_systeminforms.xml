@@ -8,10 +8,16 @@
     android:background="@drawable/systeminforms">
     <RelativeLayout
         android:id="@+id/layout_category_topbar"
-        style="@style/TopbarStyle"
-       >
+        style="@style/TopbarStyle">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/back"/>
         <TextView
-
             android:id="@+id/tv_find"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
