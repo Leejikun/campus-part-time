@@ -16,9 +16,12 @@ public class Activitydetails extends AppCompatActivity {
     public TextView workNeed;
     public TextView workDescribe;
     public TextView howPay;
+    public TextView howPay1;
+
     public TextView have;
     public TextView wages;
     public TextView allNeed;
+    public TextView company;
     private Button sign_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,8 +43,10 @@ public class Activitydetails extends AppCompatActivity {
         workDescribe.setText(title);
         workTime.setText(worktime);
         howPay.setText(howpay);
+        howPay1.setText(howpay);
         wages.setText(wages1);
         workPlace.setText(address);
+        company.setText(info);
         sign_button = (Button)findViewById(R.id.sign);
         sign_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +74,9 @@ public class Activitydetails extends AppCompatActivity {
         workNeed =(TextView) findViewById(R.id.workNeed);
         workDescribe =(TextView) findViewById(R.id.workDescribe);
         howPay =(TextView) findViewById(R.id.howPay);
+        howPay1 =(TextView) findViewById(R.id.howPay1);
         wages =(TextView) findViewById(R.id.wages);
+        company=(TextView) findViewById(R.id.company);
         allNeed =(TextView) findViewById(R.id.allNeed);
     }
 

@@ -25,6 +25,10 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 public class ActivityMyparttime extends AppCompatActivity {
+    public TextView allmypt;
+    public TextView signed;
+    public TextView accepted;
+    public TextView ended;
     private ImageView back;
     private ListView listView;
     private List<Map<String, Object>> mData;
@@ -34,6 +38,10 @@ public class ActivityMyparttime extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_myparttime);
         back=(ImageView)findViewById(R.id.back);
+        accepted=(TextView)findViewById(R.id.accepted);
+        allmypt=(TextView)findViewById(R.id.allmypt);
+        signed=(TextView)findViewById(R.id.signed);
+        ended=(TextView)findViewById(R.id.ended);
         //返回上一页
         back.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +51,6 @@ public class ActivityMyparttime extends AppCompatActivity {
         });
 
         listView = (ListView) findViewById(R.id.lv_mypt);
-
         mData = getData();
         MyAdapter adapter2 = new MyAdapter(this);
         listView.setAdapter(adapter2);
@@ -54,7 +61,7 @@ public class ActivityMyparttime extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Intent intent = new Intent();
-                intent.setClass(getBaseContext(),Activitydetails.class);
+                intent.setClass(getBaseContext(),ActivityMyptdetails.class);
                 Bundle bundle = new Bundle();
                 bundle.putInt("image", (Integer) mData.get(position).get("img"));
                 bundle.putString("title", (String)mData.get(position).get("title"));

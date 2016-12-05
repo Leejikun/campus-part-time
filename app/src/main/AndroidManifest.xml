@@ -20,7 +20,7 @@
     <service
         android:name="com.baidu.location.f"
         android:enabled="true"
-        android:process=":remote" />
+        android:process=":remote"></service>
 
     <application
         android:allowBackup="true"
@@ -45,7 +45,7 @@
         <activity android:name=".ActivityFeedback" />
         <activity android:name=".ActivityHometeacher" />
         <activity android:name=".ActivitySign" />
-        <activity android:name=".ActivityMyparttime" />
+        <activity android:name=".ActivitySignin" />
         <activity android:name=".ActivityMyparttime" />
         <activity android:name=".ActivitySysteminforms" />
         <!--
@@ -58,7 +58,7 @@
 
         <activity android:name=".Activitydetails" />
         <activity android:name=".map" />
-        <activity android:name=".Activityinformsuccessful" />
+        <activity android:name=".ActivityMyptdetails"></activity>
     </application>
 
 </manifest>
