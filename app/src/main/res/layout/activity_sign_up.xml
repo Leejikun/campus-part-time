@@ -291,5 +291,4 @@
                 android:text="完成并报名"/>
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>
