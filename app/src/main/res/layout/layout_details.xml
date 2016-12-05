@@ -91,48 +91,71 @@
         </TableLayout>
     </LinearLayout>
 
-    //工作时间地点
-    <TableLayout
+    //工作时间
+    <LinearLayout
+        android:orientation="horizontal"
         android:background="#ffffff"
         android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-        <TableRow
-            android:paddingBottom="10dp"
-            android:paddingTop="10dp">
-            <TextView
-                android:paddingLeft="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#404040"
-                android:text="工作时间:"
-                android:textSize="17dp"/>
-            <TextView
-                android:id="@+id/workTime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17dp"
-                android:textColor="#000000"
-                android:text="11:00 到 13:00  9月12号" />
-        </TableRow>
-        <TableRow
-            android:paddingBottom="10dp">
-            <TextView
-                android:layout_marginLeft="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="#404040"
-                android:text="工作地点："
-                android:textSize="17dp"/>
-            <TextView
-                android:id="@+id/workPlace"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="17dp"
-                android:textColor="#000000"
-                android:text="" />
-        </TableRow>
-    </TableLayout>
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="#8bbb54" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工作时间："
+            android:textColor="#404040"
+            android:textSize="17dp"/>
+        <TextView
+            android:id="@+id/workTime"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="17dp"/>
+
+    </LinearLayout>
+    //工作地点
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="#8bbb54" />
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="工作地点："
+            android:textColor="#404040"
+            android:textSize="17dp"/>
+        <TextView
+            android:id="@+id/workPlace"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="17sp"/>
+    </LinearLayout>
     //薪资福利
     <TableLayout
         android:background="#ffffff"
@@ -250,9 +273,15 @@
         android:background="#ffffff"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+       <ImageView
+           android:layout_gravity="center_vertical"
+           android:layout_marginLeft="20dp"
+           android:layout_width="10dp"
+           android:layout_height="10dp"
+           android:background="#8bbb54" />
         <TextView
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="报名截止："
@@ -267,6 +296,7 @@
             android:text=""
             android:textColor="#000000"
             android:textSize="17dp"/>
+
     </LinearLayout>
     //兼职发布单位
     <LinearLayout
@@ -277,8 +307,14 @@
         android:paddingBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="#8bbb54" />
         <TextView
-            android:paddingLeft="20dp"
+            android:paddingLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="left"
