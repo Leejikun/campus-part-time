@@ -44,6 +44,7 @@
         <activity android:name=".ActivityAppintorduce" />
         <activity android:name=".ActivityFeedback" />
         <activity android:name=".ActivityHometeacher" />
+        <activity android:name=".ActivityPublish"/>
         <activity android:name=".ActivitySign" />
         <activity android:name=".ActivitySignin" />
         <activity android:name=".ActivityMyparttime" />

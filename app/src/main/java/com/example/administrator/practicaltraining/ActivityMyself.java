@@ -28,6 +28,7 @@ public class ActivityMyself extends Activity {
     private Button button;
     private TextView textView;
     private RelativeLayout mypt;
+    private RelativeLayout publish;
     private RelativeLayout relativeLayout;
     private RelativeLayout relativeLayout1;
     private RelativeLayout relativeLayout2;
@@ -60,6 +61,15 @@ public class ActivityMyself extends Activity {
             public void onClick(View view) {
                 Intent intent=new Intent();
                 intent.setClass(ActivityMyself.this,ActivityMyparttime.class);
+                startActivity(intent);
+            }
+        });
+        publish = (RelativeLayout)findViewById(R.id.id_myself_publish);
+        publish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(ActivityMyself.this,ActivityPublish.class);
                 startActivity(intent);
             }
         });
