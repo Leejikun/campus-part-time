@@ -44,7 +44,8 @@ public class ActivitySign extends AppCompatActivity {
             public void onClick(View v) {
                 if (txt.length() == 0) {
                     Toast.makeText(ActivitySign.this, "请输入真实姓名", Toast.LENGTH_LONG).show();
-                } else {
+                }else
+                {
                     Intent intent = new Intent();
                     intent.setClass(ActivitySign.this, Activityinformsuccessful.class);
                     startActivity(intent);

@@ -6,15 +6,26 @@
     android:layout_height="match_parent"
     tools:context="com.example.administrator.practicaltraining.ActivityAppintorduce"
     android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+    <ImageView
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/back"
+        android:id="@+id/fk_back"/>
     <TextView
-        android:textColor="#FFFFFF"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:background="@color/theme"
-        android:layout_width="fill_parent"
-        android:layout_height="55dp"
-        android:text="校园兼职APP介绍"/>
-
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="校园兼职APP介绍"
+        android:textSize="17dp"
+        android:layout_centerInParent="true"
+        android:textColor="#222222"/>
+    </RelativeLayout>
     <TextView
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
