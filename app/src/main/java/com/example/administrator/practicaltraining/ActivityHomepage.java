@@ -63,17 +63,7 @@ public class ActivityHomepage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
-        linearLayout=(LinearLayout)findViewById(R.id.head);
-        linearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent i=new Intent();
-                i.setClass(ActivityHomepage.this,map.class);
-                startActivity(i);
-
-            }
-        });
         mViewPaper = (ViewPager) findViewById(R.id.vp);
 
         //显示的图片
