@@ -38,7 +38,6 @@
     android:layout_height="1dp"
     android:background="#ccc"/>
     <RelativeLayout
-        android:paddingTop="10dp"
         android:layout_width="fill_parent"
         android:layout_height="50dp">
     <TextView
@@ -47,7 +46,8 @@
         android:layout_height="wrap_content"
         android:text="@string/worktime"
         android:padding="10dp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:layout_centerVertical="true"/>
     <EditText
         android:layout_toEndOf="@+id/id_time"
         android:layout_width="wrap_content"
@@ -97,7 +97,12 @@
             android:id="@+id/id_sex"
             android:textSize="20sp"
             android:gravity="center_vertical"/>
-
+        <RadioGroup
+            android:layout_toRightOf="@id/id_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
         <RadioButton
             android:text="@string/男"
             android:layout_toEndOf="@+id/id_sex"
@@ -124,7 +129,7 @@
             android:id="@+id/id_radio"
             android:focusable="false"
             android:layout_centerInParent="true"/>
-
+        </RadioGroup>
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
@@ -140,6 +145,13 @@
             android:padding="10dp"
             android:text="@string/工薪"
             android:textSize="20sp"/>
+        <RadioGroup
+            android:id="@+id/id_moneytype"
+            android:layout_toRightOf="@id/id_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
         <RadioButton
             android:text="@string/日结"
             android:layout_toEndOf="@+id/id_money"
@@ -157,11 +169,14 @@
             android:id="@+id/id_radioworker"
             android:focusable="false"
             android:layout_centerInParent="true"/>
+        </RadioGroup>
         <EditText
+            android:paddingLeft="10dp"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:layout_toEndOf="@id/id_radioworker"
+            android:layout_toRightOf="@+id/id_moneytype"
             android:hint="金额"
+            android:textSize="15dp"
             android:id="@+id/moner"
             android:background="@null"
             android:layout_centerInParent="true"/>
@@ -186,7 +201,12 @@
             android:layout_height="wrap_content"
             android:id="@+id/id_card"
             android:textSize="20sp"/>
-
+        <RadioGroup
+            android:layout_toRightOf="@id/id_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
         <RadioButton
             android:text="@string/学生"
             android:layout_toEndOf="@+id/id_card"
@@ -204,7 +224,7 @@
             android:id="@+id/id_radio4"
             android:focusable="false"
             android:layout_centerInParent="true"/>
-
+        </RadioGroup>
     </RelativeLayout>
     <View
         android:layout_width="match_parent"
