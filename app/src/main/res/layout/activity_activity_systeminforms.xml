@@ -9,7 +9,7 @@
     <RelativeLayout
         android:id="@+id/layout_category_topbar"
         style="@style/TopbarStyle"
-        android:background="@color/theme">
+       >
         <TextView
 
             android:id="@+id/tv_find"
