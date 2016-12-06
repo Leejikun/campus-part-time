@@ -49,6 +49,11 @@
         android:enabled="true"
         android:process=":remote"></service>
 
+    <service
+        android:name="com.baidu.location.f"
+        android:enabled="true"
+        android:process=":remote"></service>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/appimage"
@@ -97,6 +102,7 @@
 
         <activity android:name=".Activitydetails" />
         <activity android:name=".baidumap"></activity>
+        <activity android:name=".Resetpwd"></activity>
     </application>
     <meta-data
         android:name="com.google.android.gms.version"
