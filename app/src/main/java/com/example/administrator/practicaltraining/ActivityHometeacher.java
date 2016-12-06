@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -31,6 +32,18 @@ public class ActivityHometeacher extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hometeacher);
 
+        final RefreshableView refreshableView = (RefreshableView) findViewById(R.id.refreshable_view);
+        refreshableView.setOnRefreshListener(new RefreshableView.PullToRefreshListener() {
+            @Override
+            public void onRefresh() {
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                refreshableView.finishRefreshing();
+            }
+        }, 0);
         findViewById(R.id.fl_back).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

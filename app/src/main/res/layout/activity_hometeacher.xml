@@ -22,10 +22,14 @@
             android:textColor="@color/black"
             android:textSize="@dimen/medium_text_size" />
     </RelativeLayout>
+    <com.example.administrator.practicaltraining.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/lv_fl">
-
     </ListView>
+    </com.example.administrator.practicaltraining.RefreshableView>
 </LinearLayout>

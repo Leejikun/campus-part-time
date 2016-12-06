@@ -17,7 +17,7 @@ public class ActivitySysteminforms extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity_systeminforms);
+        setContentView(R.layout.activity_systeminforms);
         back = (ImageView)findViewById(R.id.back);
         back.setOnClickListener(new View.OnClickListener() {
             @Override

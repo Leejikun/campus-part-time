@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.practicaltraining.ActivityAppintorduce"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        style="@style/TopbarStyle" >
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/back"
+            android:id="@+id/wm_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size"
+            android:text="关于我们"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="author"
+                android:gravity="center"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="青龙团队"
+                android:gravity="center"
+                android:textColor="#222222"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="QingLong team"
+                android:gravity="center"
+                android:textColor="#222222"
+                android:textSize="11sp" />
+
+            <TextView
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="60dp"
+                android:lineSpacingExtra="10dp"
+                android:textColor="#090504"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="\t\t\t\t\t校园兼职APP是一款面向在校大学生兼职软件，辅以校园街（校内物品交易）、交友以及大学资讯为主要内容的大学生应用APP，该APP共搭建了三个平台:分别为兼职平台、校园街平台、资讯平台，致力于为大学生提供真实、好玩、实用的生活与服务。\n
+        校园兼职功能特色\n
+        [真实靠谱的信息] 兼职信息经过四重审核，确保真实靠谱！\n
+        [丰富齐全的兼职]信息种类齐全，既可满足学生进行社会实践，锻炼自我，也可满足蓝领求职找工作！\n
+        [便捷贴心的服务]我们根据用户的习惯为用户匹配可能感兴趣的兼职，提高你的浏览效率！"
+                android:textSize="13dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

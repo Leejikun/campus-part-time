@@ -35,8 +35,8 @@ public class ActivityLogin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity_login);
-        TabHost tab = (TabHost) findViewById(R.id.tabhost);
+        setContentView(R.layout.activity_login);
+        TabHost tab = (TabHost)findViewById(R.id.tabhost);
         tab.setup();  //初始化TabHost容器
 
         LayoutInflater i = LayoutInflater.from(this);
