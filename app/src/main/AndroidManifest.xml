@@ -50,6 +50,7 @@
         <activity android:name=".ActivitySignin" />
         <activity android:name=".ActivityMyparttime" />
         <activity android:name=".ActivitySysteminforms" />
+        <activity android:name=".ActivitySearch"/>
 
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
