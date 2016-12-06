@@ -9,6 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.administrator.practicaltraining.baidumap">
 
+
     <com.baidu.mapapi.map.TextureMapView
         android:id="@+id/bmapView"
         android:layout_width="fill_parent"
