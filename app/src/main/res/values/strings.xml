@@ -13,8 +13,8 @@
     <string name="text3">请完成下面的发布表格</string>
     <string name="请输入手机号码">请输入手机号码</string>
     <string name="手机号码">手机号码</string>
-    <string name="女">女</string>
-    <string name="男">男</string>
+    <string name="女">    女    </string>
+    <string name="男">    男    </string>
     <string name="男女不限">男女不限</string>
     <string name="身份">身份</string>
     <string name="请输入出生年月">请输入出生年月</string>
@@ -22,7 +22,7 @@
     <string name="学生">学生</string>
     <string name="非学生">非学生</string>
     <string name="系统通知">系统通知</string>
-    <string name="联系方式">联系方式</string>
+    <string name="联系方式">联系方式：</string>
     <string name="workspace">工作地点</string>
     <string name="worktime">工作时间</string>
     <string name="性别要求">性别要求</string>
