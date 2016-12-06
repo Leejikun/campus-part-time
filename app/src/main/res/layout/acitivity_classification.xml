@@ -228,6 +228,12 @@
                 android:layout_height="0.5dp"
                 style="@style/PersonalLine"
                 android:layout_below="@+id/id_myself_myshop"/>
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="btn"
+            android:id="@+id/aaaaa"/>
         </LinearLayout>
+
     </ScrollView>
 </RelativeLayout>
