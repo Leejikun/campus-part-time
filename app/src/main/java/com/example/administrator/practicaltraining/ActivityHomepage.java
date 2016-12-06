@@ -20,6 +20,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -64,18 +65,9 @@ public class ActivityHomepage extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
-        linearLayout=(LinearLayout)findViewById(R.id.head);
-        linearLayout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                Intent i=new Intent();
-                i.setClass(ActivityHomepage.this,map.class);
-                startActivity(i);
 
-            }
-        });
-        sousuo = (ImageView) findViewById(R.id.search);
+        ImageView sousuo = (ImageView) findViewById(R.id.search);
         sousuo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
