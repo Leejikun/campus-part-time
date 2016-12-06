@@ -36,5 +36,15 @@ public class ActivityMessage extends Activity {
 
           }
       });
+        relativeLayout1 = (RelativeLayout) findViewById(R.id.layout_activity);
+        relativeLayout1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent();
+                i.setClass(ActivityMessage.this,ActivityClient.class);
+                startActivity(i);
+
+            }
+        });
     }
 }
