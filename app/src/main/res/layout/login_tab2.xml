@@ -44,22 +44,22 @@
     </LinearLayout>
     <Button
         android:id="@+id/login_btn_login"
-        android:background="@drawable/button"
+        android:background="#ff0000"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="35dp"
         android:textSize="15dp"
         android:text="登录"/>
     <Button
         android:id="@+id/login_btn_cancle"
-        android:background="@drawable/button"
+        android:background="#ff0000"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="35dp"
         android:textSize="15dp"
         android:text="注销"/>
     <LinearLayout
