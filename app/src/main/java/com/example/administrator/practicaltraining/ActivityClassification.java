@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -21,6 +22,15 @@ public class ActivityClassification extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitivity_classification);
+
+        findViewById(R.id.aaaaa).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent();
+                i.setClass(ActivityClassification.this,baidumap.class);
+                startActivity(i);
+            }
+        });
 
         final RelativeLayout hometeacher = (RelativeLayout)findViewById(R.id.id_classification_hometeacher);
          teacher=(TextView)findViewById(R.id.teacher);
