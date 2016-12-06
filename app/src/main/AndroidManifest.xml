@@ -13,6 +13,11 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 
+    <service
+        android:name="com.baidu.location.f"
+        android:enabled="true"
+        android:process=":remote"></service>
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/appimage"
@@ -36,12 +41,12 @@
         <activity android:name=".ActivityAppintorduce" />
         <activity android:name=".ActivityFeedback" />
         <activity android:name=".ActivityHometeacher" />
-        <activity android:name=".ActivityPublish"/>
+        <activity android:name=".ActivityPublish" />
         <activity android:name=".ActivitySign" />
         <activity android:name=".ActivitySignin" />
         <activity android:name=".ActivityMyparttime" />
         <activity android:name=".ActivitySysteminforms" />
-        <activity android:name=".ActivitySearch"/>
+        <activity android:name=".ActivitySearch" />
 
         <!--
  ATTENTION: This was auto-generated to add Google Play services to your project for
@@ -52,11 +57,7 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".Activitydetails" />
+        <activity android:name=".Resetpwd"></activity>
     </application>
-    <service
-        android:name="com.baidu.location.f"
-        android:enabled="true"
-        android:process=":remote">
-    </service>
 
 </manifest>
