@@ -37,7 +37,7 @@ public class ActivityPublish extends Activity {
                 builder.setMessage("确定要发布兼职吗？");
                 builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
-                        Toast toast = Toast.makeText(ActivityPublish.this,"信息已提交，请注意查收通知。",Toast.LENGTH_LONG);
+                        Toast toast = Toast.makeText(ActivityPublish.this,"信息已提交，请您注意查收通知。",Toast.LENGTH_LONG);
                         toast.setGravity(Gravity.CENTER,0,0);
                         toast.show();
                         ActivityPublish.this.finish();
