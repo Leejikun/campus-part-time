@@ -27,19 +27,13 @@
             android:layout_marginTop="12dp"
             android:layout_marginRight="14dp" />
 
-        <EditText
-            android:layout_width="230dp"
-            android:layout_height="30dp"
-            android:paddingLeft="7dp"
-            android:id="@+id/soushuo"
-            android:background="@drawable/bg_edittext"
+        <ImageView
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:id="@+id/search"
+            android:layout_gravity="center"
             android:drawableLeft="@drawable/icon_10"
-            android:drawablePadding="6dp"
-            android:layout_marginTop="9dp"
-            android:inputType="none"
-            android:textSize="16dp"
-            android:textColor="#ECFCAD"
-            android:textCursorDrawable="@null"/>
+            android:background="@drawable/bg_edittext"/>
 
         <ImageView
             android:layout_width="25dp"
