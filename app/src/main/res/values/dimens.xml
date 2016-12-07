@@ -5,6 +5,7 @@
     <dimen name="activity_vertical_margin">16dp</dimen>
 
     <!-- 字体大小 -->
+    <dimen name="historyscore_tb">10dp</dimen>
     <dimen name="tiny_text_size">10sp</dimen>
     <dimen name="micro_text_size">13sp</dimen>
     <dimen name="micro_middle_text_size">13sp</dimen>

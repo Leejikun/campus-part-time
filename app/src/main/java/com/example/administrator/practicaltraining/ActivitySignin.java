@@ -1,59 +1,106 @@
 package com.example.administrator.practicaltraining;
 
-import android.icu.text.SimpleDateFormat;
-import android.support.v7.app.AppCompatActivity;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.DatePicker;
-import android.widget.EditText;
-import android.widget.TimePicker;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import java.util.Calendar;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
 
-public class ActivitySignin extends AppCompatActivity {
-    private int year;
-    private int month;
-    private int day;
-    private int hour;
-    private int minute;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_activity_signin);
-        DatePicker datePicker=(DatePicker)findViewById(R.id.datePicker);
-      //  TimePicker timePicker=(TimePicker)findViewById(R.id.timePicker);
-        //获取当前的年月日小时分钟
-        Calendar c=Calendar.getInstance();
-        year=c.get(Calendar.YEAR);
-        month=c.get(Calendar.MONTH);
-        day=c.get(Calendar.DAY_OF_MONTH);
-        hour=c.get(Calendar.HOUR);
-        minute=c.get(Calendar.MINUTE);
-        //初始化DatePicker组件，初始化时指定监听器
-        datePicker.init(year, month, day, new DatePicker.OnDateChangedListener() {
-            @Override
-            public void onDateChanged(DatePicker arg0, int year, int month, int day) {
-                ActivitySignin.this.year=year;
-                ActivitySignin.this.month=month;
-                ActivitySignin.this.day=day;
-                //显示当前日期，时间
-                showDate(year,month,day,hour,minute);
-            }
+public class ActivitySignin extends Activity {
+
+	private String date = null;// 设置默认选中的日期  格式为 “2014-04-05” 标准DATE格式
+	private TextView popupwindow_calendar_month;
+	private SignCalendar calendar;
+	private Button btn_signIn;
+	private List<String> list = new ArrayList<String>(); //设置标记列表
+	private ImageView imageView;
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+
+		setContentView(R.layout.activity_activity_signin);
+		imageView=(ImageView)findViewById(R.id.back) ;
+		imageView.setOnClickListener(new View.OnClickListener() {
+										 @Override
+										 public void onClick(View v) {
+											 Intent intent = new Intent();
+											 intent.setClass(ActivitySignin.this, ActivityMessage.class);
+											 startActivity(intent);
+										 }
+									 });
+		popupwindow_calendar_month = (TextView) findViewById(R.id.popupwindow_calendar_month);
+		btn_signIn = (Button) findViewById(R.id.btn_signIn);
+		calendar = (SignCalendar) findViewById(R.id.popupwindow_calendar);
+		popupwindow_calendar_month.setText(calendar.getCalendarYear() + "年"
+				+ calendar.getCalendarMonth() + "月");
+		if (null != date) {
+
+			int years = Integer.parseInt(date.substring(0,
+					date.indexOf("-")));
+			int month = Integer.parseInt(date.substring(
+					date.indexOf("-") + 1, date.lastIndexOf("-")));
+			popupwindow_calendar_month.setText(years + "年" + month + "月");
+
+			calendar.showCalendar(years, month);
+			calendar.setCalendarDayBgColor(date,
+					R.drawable.calendar_date_focused);
+		}
+
+		list.add("2015-11-10");
+		list.add("2015-11-02");
+		calendar.addMarks(list, 0);
+		btn_signIn.setOnClickListener(new OnClickListener() {
+          @Override
+          public void onClick(View v) {
+           Date today= calendar.getThisday();
+            calendar.addMark(today, 0);
+            HashMap<String, Integer> bg = new HashMap<String, Integer>();
+            calendar.setCalendarDayBgColor(today, R.drawable.bg_sign_today);
+            btn_signIn.setText("今日已签，明日继续");
+            btn_signIn.setEnabled(false);
+          }
         });
-        //为TimePicker指定监听器
-        /*timePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
-            @Override
-            public void onTimeChanged(TimePicker arg0, int hour, int minute) {
-                ActivitySignin.this.hour=hour;
-                ActivitySignin.this.minute=minute;
-                //显示当前日期，时间
-                showDate(year,month,day,hour,minute);
-            }
-        });*/
-    }
-    //定义在EditText中显示当前日期时间的方法
-    private void showDate(int year ,int month ,int day,int hour ,int minute ){
-        EditText show=(EditText)findViewById(R.id.show);
-        show.setText("您的签到时间是："+year+"年"+(month+1)+"月"+day+"日"+hour+"时"+minute+"分");
-    }
-    }
+		//监听所选中的日期
+//		calendar.setOnCalendarClickListener(new OnCalendarClickListener() {
+//
+//			public void onCalendarClick(int row, int col, String dateFormat) {
+//				int month = Integer.parseInt(dateFormat.substring(
+//						dateFormat.indexOf("-") + 1,
+//						dateFormat.lastIndexOf("-")));
+//
+//				if (calendar.getCalendarMonth() - month == 1//跨年跳转
+//						|| calendar.getCalendarMonth() - month == -11) {
+//					calendar.lastMonth();
+//
+//				} else if (month - calendar.getCalendarMonth() == 1 //跨年跳转
+//						|| month - calendar.getCalendarMonth() == -11) {
+//					calendar.nextMonth();
+//
+//				} else {
+//					list.add(dateFormat);
+//					calendar.addMarks(list, 0);
+//					calendar.removeAllBgColor(); 
+//					calendar.setCalendarDayBgColor(dateFormat,
+//							R.drawable.calendar_date_focused);
+//					date = dateFormat;//最后返回给全局 date
+//				}
+//			}
+//		});
 
+		//监听当前月份
+		calendar.setOnCalendarDateChangedListener(new SignCalendar.OnCalendarDateChangedListener() {
+			public void onCalendarDateChanged(int year, int month) {
+				popupwindow_calendar_month
+						.setText(year + "年" + month + "月");
+			}
+		});
+	}
+
+}
