@@ -45,8 +45,8 @@ public class ActivityMyself extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitivity_myself);
-        imageView = (CircleImageView) findViewById(R.id.touxiang);
-        imageView.setOnClickListener(new View.OnClickListener() {
+        textView= (TextView) findViewById(R.id.dlzc);
+        textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();

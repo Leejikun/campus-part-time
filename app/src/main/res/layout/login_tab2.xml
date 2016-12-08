@@ -44,7 +44,7 @@
     </LinearLayout>
     <Button
         android:id="@+id/login_btn_login"
-        android:background="#ff0000"
+        android:background="@drawable/button"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="30dp"
@@ -52,7 +52,7 @@
         android:layout_height="35dp"
         android:textSize="15dp"
         android:text="登录"/>
-    <Button
+<!--    <Button
         android:id="@+id/login_btn_cancle"
         android:background="#ff0000"
         android:layout_marginLeft="20dp"
@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:textSize="15dp"
-        android:text="注销"/>
+        android:text="注销"/>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,25 +77,4 @@
             android:text="还没有账号？去注册"
             android:gravity="left"/>
     </LinearLayout>
-    <RelativeLayout
-        android:id="@+id/login_success_view"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginLeft="15.0px"
-        android:layout_marginRight="15.0px"
-        android:layout_marginTop="62.0px"
-        android:background="#ff3f3f3f"
-        android:paddingBottom="10.0px"
-        android:paddingTop="21.0px"
-        android:visibility="gone" >
-
-        <TextView
-            android:id="@+id/login_success_show"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:textColor="#ff3f3f3f"
-            android:textSize="20.0dip" />
-    </RelativeLayout>
 </LinearLayout>

@@ -37,22 +37,7 @@
                 android:layout_weight="1"
                 android:id="@+id/resetpwd_edit_name"/>
         </TableRow>
-        <TableRow>
-            <TextView
-                android:text="真实姓名："
-                android:textSize="15dp"/>
-            <EditText android:hint="请输入真实姓名"
-                android:textSize="15dp"
-                android:layout_weight="1" />
-        </TableRow>
-        <TableRow>
-            <TextView
-                android:text="身份证号："
-                android:textSize="15dp"/>
-            <EditText android:hint="请输入身份证号"
-                android:layout_weight="1"
-                android:textSize="15dp"/>
-        </TableRow>
+
         <TableRow>
             <TextView
                 android:text="手机号："
@@ -83,11 +68,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:layout_below="@+id/table"
         android:id="@+id/register_btn_sure"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:text="注册"
         android:background="@drawable/button"
         android:textSize="15dp" />
@@ -97,17 +82,17 @@
         android:text="注册并表示同意《app协议》"
         android:gravity="center"
         android:id="@+id/tv"
-        android:textSize="15dp"
+        android:textSize="10dp"
         android:layout_below="@+id/register_btn_cancel"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:text="取消"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/button"
         android:textSize="15dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
         android:id="@+id/register_btn_cancel"
         android:layout_below="@+id/register_btn_sure" />
 </RelativeLayout>
