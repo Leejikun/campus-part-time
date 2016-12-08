@@ -24,34 +24,29 @@
             android:layout_centerVertical="true"
             android:textColor="@color/black"
             android:textSize="@dimen/medium_text_size"
-            android:text="关于我们"/>
+            android:text="@string/关于我们"/>
     </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@drawable/jianjie">
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textStyle="bold"
+            android:lineSpacingExtra="10dp">
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="author"
-                android:gravity="center"
-                android:textColor="#222222"
-                android:textSize="18sp"
-                android:layout_marginTop="30dp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="青龙团队"
+                android:text="@string/青龙团队"
                 android:gravity="center"
                 android:textColor="#222222"
                 android:textSize="17sp"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="30dp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -63,7 +58,7 @@
             <TextView
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
-                android:paddingTop="60dp"
+                android:paddingTop="45dp"
                 android:lineSpacingExtra="10dp"
                 android:textColor="#090504"
                 android:layout_width="fill_parent"

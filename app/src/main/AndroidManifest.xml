@@ -72,6 +72,7 @@
         </activity>
         <activity android:name=".ActivityMessage" />
         <activity android:name=".Activityinformsuccessful" />
+        <activity android:name=".ActivityApp" />
         <activity android:name=".ActivityMyself" />
         <activity android:name=".ActivityHomepage" />
         <activity android:name=".ActivityClassification" />

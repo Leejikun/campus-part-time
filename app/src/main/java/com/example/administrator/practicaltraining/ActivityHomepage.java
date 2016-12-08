@@ -1,13 +1,5 @@
 package com.example.administrator.practicaltraining;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.TimeUnit;
-
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -20,14 +12,20 @@ import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 //----
 public class ActivityHomepage extends Activity {
@@ -46,6 +44,7 @@ public class ActivityHomepage extends Activity {
             R.drawable.d,
             R.drawable.e
     };
+
     //存放图片的标题
     private String[]  titles = new String[]{
             "青龙团队",
@@ -122,6 +121,7 @@ public class ActivityHomepage extends Activity {
 
             }
         });
+
 
         listView = (ListView) findViewById(R.id.lv);
         mData = getData();
@@ -352,7 +352,7 @@ public class ActivityHomepage extends Activity {
         scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
         scheduledExecutorService.scheduleWithFixedDelay(
                 new ViewPageTask(),
-                4,
+                5,
                 4,
                 TimeUnit.SECONDS);
     }
