@@ -1,5 +1,5 @@
 package com.example.administrator.practicaltraining;
-//不准动！服务器写完了再改！！
+//不准动！服务器写完了再改！
 import android.app.Activity;
 /**
  * Created by lenovo on 2016/12/8.
