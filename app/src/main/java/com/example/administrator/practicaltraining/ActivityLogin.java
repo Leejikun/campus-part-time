@@ -38,7 +38,7 @@ public class ActivityLogin extends AppCompatActivity {
     private EditText editText1;
     private EditText editText2;
     private EditText editText3;
-    private Button button;
+
     private EditText editText4;
     private String string;
     public int pwdresetFlag=0;
@@ -55,7 +55,8 @@ public class ActivityLogin extends AppCompatActivity {
     private View loginSuccessView;
     private TextView loginSuccessShow;
     private TextView mChangepwdText;
-    private UserDataManager mUserDataManager;         //用户数据管理类
+    private UserDataManager mUserDataManager;//用户数据管理类
+    private Button button;
 
     public ActivityLogin() {
     }
@@ -120,6 +121,8 @@ public class ActivityLogin extends AppCompatActivity {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
+
+
                         }
                     });
                     AdBuilder.setNegativeButton("取消", null);
@@ -128,6 +131,7 @@ public class ActivityLogin extends AppCompatActivity {
                 }
             }
         });
+
         mAccount = (EditText) findViewById(R.id.login_edit_account);
         mPwd = (EditText) findViewById(R.id.login_edit_pwd);
         mRegisterTextView = (TextView) findViewById(R.id.login_btn_register);
