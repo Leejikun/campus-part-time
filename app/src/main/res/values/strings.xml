@@ -17,7 +17,7 @@
     <string name="男">    男    </string>
     <string name="男女不限">男女不限</string>
     <string name="身份">身份</string>
-    <string name="请输入出生年月">请输入出生年月</string>
+    <string name="请输入年龄">请输入年龄</string>
     <string name="出生年月">出生年月</string>
     <string name="学生">学生</string>
     <string name="非学生">非学生</string>
