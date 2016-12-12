@@ -211,7 +211,7 @@ public class ActivityLogin extends AppCompatActivity {
                 code=((EditText)findViewById(R.id.et_code)).getText().toString();
                 if (code.equals("")){
                     Toast.makeText(ActivityLogin.this,"验证码不能为空",Toast.LENGTH_SHORT).show();
-                }else{
+                }else  {
                     //填写了验证码，进行验证
                     submitVerificationCode("86", phone, code);
                 }
