@@ -36,7 +36,6 @@ public class ActivityLogin extends AppCompatActivity {
     public ActivityLogin() {
     }
     private final String TAG="--MainActivity--";
-    //app key和app secret 需要填自己应用的对应的！这里只是我自己创建的应用。
     private final String appKey="19a9661bb0a92";
     private final String appSecret="49d2b52eb984805af686bd6b6b5a9c9b";
     private EventHandler eh;
@@ -122,6 +121,12 @@ public class ActivityLogin extends AppCompatActivity {
                 intent.setClass(ActivityLogin.this,Resetpwd.class);
                 startActivity(intent);
 
+            }
+        });
+        findViewById(R.id.fl_back).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
         TextView textView1 = (TextView)findViewById(R.id.login_btn_register);
