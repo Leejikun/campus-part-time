@@ -28,6 +28,8 @@ public class ActivityMyself extends Activity {
     private TextView textView;
     private RelativeLayout mypt;
     private RelativeLayout publish;
+    private RelativeLayout entrylist;
+    private RelativeLayout resume;
     private RelativeLayout relativeLayout;
     private RelativeLayout relativeLayout1;
     private RelativeLayout relativeLayout2;
@@ -43,7 +45,7 @@ public class ActivityMyself extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acitivity_myself);
+        setContentView(R.layout.activity_myself);
         textView= (TextView) findViewById(R.id.dlzc);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +71,24 @@ public class ActivityMyself extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(ActivityMyself.this,ActivityPublish.class);
+                startActivity(intent);
+            }
+        });
+        entrylist = (RelativeLayout)findViewById(R.id.entrylist);
+        entrylist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(ActivityMyself.this,ActivityEntrylist.class);
+                startActivity(intent);
+            }
+        });
+        resume = (RelativeLayout)findViewById(R.id.resume);
+        resume.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(ActivityMyself.this,ActivityResume.class);
                 startActivity(intent);
             }
         });

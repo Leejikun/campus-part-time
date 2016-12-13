@@ -86,6 +86,8 @@
         <activity android:name=".ActivityMyparttime" />
         <activity android:name=".ActivitySysteminforms" />
         <activity android:name=".ActivitySearch" />
+        <activity android:name=".ActivityEntrylist"/>
+        <activity android:name=".ActivityResume"/>
         <activity android:name=".ActivitySignin">
             <intent-filter>
 
