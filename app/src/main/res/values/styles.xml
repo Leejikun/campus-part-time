@@ -4,13 +4,13 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">#40bbef</item>
+        <item name="colorAccent">#c1000000</item>
     </style>
     <style name="PersonalLine">
-        <item name="android:background">#ffccccaa</item>
+        <item name="android:background">#00000000</item>
         <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">1.0dip</item>
+        <item name="android:layout_height">0dp</item>
     </style>
     <!-- 标题栏 -->
     <style name="TopbarStyle">

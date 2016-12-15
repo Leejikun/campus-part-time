@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.v4.view.PagerAdapter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
@@ -61,7 +62,7 @@ public class ActivityMyparttime extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Intent intent = new Intent();
-                intent.setClass(getBaseContext(),ActivityMyptdetails.class);
+                intent.setClass(ActivityMyparttime.this,ActivityMyptdetails.class);
                 Bundle bundle = new Bundle();
                 bundle.putInt("image", (Integer) mData.get(position).get("img"));
                 bundle.putString("title", (String)mData.get(position).get("title"));
@@ -70,10 +71,9 @@ public class ActivityMyparttime extends AppCompatActivity {
                 bundle.putString("workTime", (String)mData.get(position).get("workTime"));
                 bundle.putString("howPay", (String)mData.get(position).get("howPay"));
                 bundle.putString("wages", (String)mData.get(position).get("wages"));
-                //  bundle.putString("title1", titles1[i]);
                 intent.putExtras(bundle);
                 startActivity(intent);
-                Toast.makeText(getApplicationContext(), (String)mData.get(position).get("title"), Toast.LENGTH_LONG).show();
+
             }
         });
 

@@ -91,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#404040"
-                    android:text="ddd"/>
+                    android:text=""/>
 
             </TableRow>
         </TableLayout>
@@ -319,7 +319,6 @@
             android:text=""
             android:textColor="#000000"
             android:textSize="17dp"/>
-
     </LinearLayout>
     //兼职发布单位
     <LinearLayout
@@ -353,11 +352,42 @@
             android:textColor="#000000"
             android:textSize="17sp"/>
     </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_width="8dp"
+            android:layout_height="2dp"
+            android:background="#8bbb54" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系方式："
+            android:textColor="#404040"
+            android:textSize="17dp"/>
+        <TextView
+            android:id="@+id/phone"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="17dp"/>
+    </LinearLayout>
     <Button
         android:id="@+id/sign"
         android:layout_marginLeft="28dp"
         android:layout_marginRight="28dp"
         android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#8bbb54"
