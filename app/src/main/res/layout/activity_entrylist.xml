@@ -2,8 +2,34 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="这是报名列表"/>
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        style="@style/TopbarStyle" >
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/back"
+            android:id="@+id/back"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size" />
+    </RelativeLayout>
+    <com.example.administrator.practicaltraining.RefreshableView
+        android:id="@+id/refreshable_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_fl">
+        </ListView>
+    </com.example.administrator.practicaltraining.RefreshableView>
 </LinearLayout>

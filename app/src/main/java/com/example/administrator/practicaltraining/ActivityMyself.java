@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.baidu.mapapi.map.Text;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -26,6 +27,7 @@ import java.io.File;
 public class ActivityMyself extends Activity {
     private Button button;
     private TextView textView;
+    private TextView Entrylist;
     private RelativeLayout mypt;
     private RelativeLayout publish;
     private RelativeLayout entrylist;
@@ -75,11 +77,16 @@ public class ActivityMyself extends Activity {
             }
         });
         entrylist = (RelativeLayout)findViewById(R.id.entrylist);
+        Entrylist = (TextView)findViewById(R.id.Entrylist);
         entrylist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(ActivityMyself.this,ActivityEntrylist.class);
+                Bundle bundle=new Bundle();
+                String service=Entrylist.getText().toString();
+                bundle.putString("name",service);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
         });
