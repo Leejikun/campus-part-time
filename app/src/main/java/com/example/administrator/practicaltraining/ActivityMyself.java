@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.baidu.mapapi.map.Text;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -82,7 +81,7 @@ public class ActivityMyself extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(ActivityMyself.this,ActivityEntrylist.class);
+                intent.setClass(ActivityMyself.this,ActivityParttimelist.class);
                 Bundle bundle=new Bundle();
                 String service=Entrylist.getText().toString();
                 bundle.putString("name",service);
