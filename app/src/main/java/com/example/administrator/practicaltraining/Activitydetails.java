@@ -17,11 +17,12 @@ public class Activitydetails extends AppCompatActivity {
     public TextView workDescribe;
     public TextView howPay;
     public TextView howPay1;
-
-    public TextView have;
+    public TextView dowhat;
     public TextView wages;
     public TextView allNeed;
+    public TextView stoptime;
     public TextView company;
+    public TextView phone;
     private Button sign_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +31,6 @@ public class Activitydetails extends AppCompatActivity {
         setView();
         Intent intent=getIntent();
         Bundle bundle=intent.getExtras();
-        // int image = bundle.getInt("image");
         String title = bundle.getString("title");
         String info = bundle.getString("info");
         String address = bundle.getString("address");
@@ -38,7 +38,6 @@ public class Activitydetails extends AppCompatActivity {
         String howpay = bundle.getString("howPay");
         String wages1 = bundle.getString("wages");
 
-        //image2.setBackgroundResource(image);
         workName.setText(title);
         workDescribe.setText(title);
         workTime.setText(worktime);
@@ -68,16 +67,20 @@ public class Activitydetails extends AppCompatActivity {
 
     public void setView(){
         back=(ImageView)findViewById(R.id.back);
+
         workName =(TextView) findViewById(R.id.workName);
+        allNeed =(TextView) findViewById(R.id.allNeed);
+        howPay1 =(TextView) findViewById(R.id.howPay1);
+        howPay =(TextView) findViewById(R.id.howPay);
+        wages =(TextView) findViewById(R.id.wages);
         workTime =(TextView) findViewById(R.id.workTime);
         workPlace =(TextView) findViewById(R.id.workPlace);
         workNeed =(TextView) findViewById(R.id.workNeed);
         workDescribe =(TextView) findViewById(R.id.workDescribe);
-        howPay =(TextView) findViewById(R.id.howPay);
-        howPay1 =(TextView) findViewById(R.id.howPay1);
-        wages =(TextView) findViewById(R.id.wages);
+        stoptime=(TextView)findViewById(R.id.stopTime);
         company=(TextView) findViewById(R.id.company);
-        allNeed =(TextView) findViewById(R.id.allNeed);
+        phone=(TextView)findViewById(R.id.phone);
+
     }
 
 }
