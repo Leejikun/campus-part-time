@@ -171,6 +171,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="宣传类"
+                    android:layout_marginTop="0dp"
                     android:textSize="17sp"
                     android:layout_toRightOf="@id/sort_img4"
                     android:layout_centerVertical="true"
