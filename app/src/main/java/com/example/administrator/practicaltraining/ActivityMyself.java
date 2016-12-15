@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.baidu.mapapi.map.Text;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -26,8 +27,11 @@ import java.io.File;
 public class ActivityMyself extends Activity {
     private Button button;
     private TextView textView;
+    private TextView Entrylist;
     private RelativeLayout mypt;
     private RelativeLayout publish;
+    private RelativeLayout entrylist;
+    private RelativeLayout resume;
     private RelativeLayout relativeLayout;
     private RelativeLayout relativeLayout1;
     private RelativeLayout relativeLayout2;
@@ -43,7 +47,7 @@ public class ActivityMyself extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.acitivity_myself);
+        setContentView(R.layout.activity_myself);
         textView= (TextView) findViewById(R.id.dlzc);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +73,29 @@ public class ActivityMyself extends Activity {
             public void onClick(View v) {
                 Intent intent = new Intent();
                 intent.setClass(ActivityMyself.this,ActivityPublish.class);
+                startActivity(intent);
+            }
+        });
+        entrylist = (RelativeLayout)findViewById(R.id.entrylist);
+        Entrylist = (TextView)findViewById(R.id.Entrylist);
+        entrylist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(ActivityMyself.this,ActivityEntrylist.class);
+                Bundle bundle=new Bundle();
+                String service=Entrylist.getText().toString();
+                bundle.putString("name",service);
+                intent.putExtras(bundle);
+                startActivity(intent);
+            }
+        });
+        resume = (RelativeLayout)findViewById(R.id.resume);
+        resume.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(ActivityMyself.this,ActivityResume.class);
                 startActivity(intent);
             }
         });

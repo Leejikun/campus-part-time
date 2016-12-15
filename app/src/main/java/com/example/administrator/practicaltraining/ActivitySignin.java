@@ -30,9 +30,7 @@ public class ActivitySignin extends Activity {
 		imageView.setOnClickListener(new View.OnClickListener() {
 										 @Override
 										 public void onClick(View v) {
-											 Intent intent = new Intent();
-											 intent.setClass(ActivitySignin.this, ActivityMessage.class);
-											 startActivity(intent);
+											 finish();
 										 }
 									 });
 		popupwindow_calendar_month = (TextView) findViewById(R.id.popupwindow_calendar_month);

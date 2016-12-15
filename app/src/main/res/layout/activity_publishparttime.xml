@@ -49,6 +49,7 @@
         android:textSize="15sp"
         android:layout_centerVertical="true"/>
     <EditText
+        android:id="@+id/id_publish_worktime"
         android:layout_toEndOf="@+id/id_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -74,6 +75,7 @@
             android:padding="10dp"
             android:textSize="15sp"/>
         <EditText
+            android:id="@+id/id_publish_workspace"
             android:layout_toEndOf="@+id/id_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -161,16 +163,16 @@
             android:layout_toEndOf="@+id/id_money"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_radiostudent"
+            android:id="@+id/id_radio3"
             android:focusable="false"
             android:layout_centerInParent="true"/>
 
         <RadioButton
             android:text="@string/月结"
-            android:layout_toEndOf="@+id/id_radiostudent"
+            android:layout_toEndOf="@+id/id_radio3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_radioworker"
+            android:id="@+id/id_radio4"
             android:focusable="false"
             android:layout_centerInParent="true"/>
         </RadioGroup>
@@ -181,14 +183,14 @@
             android:layout_toRightOf="@+id/id_moneytype"
             android:hint="金额"
             android:textSize="15dp"
-            android:id="@+id/moner"
+            android:id="@+id/money"
             android:background="@null"
             android:layout_centerInParent="true"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="元"
-            android:layout_toEndOf="@+id/moner"
+            android:layout_toEndOf="@+id/money"
             android:gravity="center_vertical"/>
 
 
@@ -220,16 +222,16 @@
             android:layout_toEndOf="@+id/id_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_radio3"
+            android:id="@+id/id_radio5"
             android:focusable="false"
             android:layout_centerInParent="true"/>
 
         <RadioButton
             android:text="@string/非学生"
-            android:layout_toEndOf="@+id/id_radio3"
+            android:layout_toEndOf="@+id/id_radio5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/id_radio4"
+            android:id="@+id/id_radio6"
             android:focusable="false"
             android:layout_centerInParent="true"/>
         </RadioGroup>
@@ -251,6 +253,7 @@
             android:text="@string/联系方式"
             android:textSize="15sp"/>
         <EditText
+            android:id="@+id/id_publish_number"
             android:layout_toEndOf="@+id/id_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -276,6 +279,7 @@
             android:text="@string/工作描述"
             android:textSize="15sp"/>
         <EditText
+            android:id="@+id/id_public_miaoshu"
             android:layout_toEndOf="@+id/id_miaoshu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
