@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.baidu.mapapi.map.Text;
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -26,6 +25,7 @@ import java.io.File;
  */
 public class ActivityMyself extends Activity {
     private Button button;
+    private CircleImageView image_view;
     private TextView textView;
     private TextView Entrylist;
     private RelativeLayout mypt;
@@ -48,6 +48,16 @@ public class ActivityMyself extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_myself);
+        image_view = (CircleImageView)findViewById(R.id.touxiang);
+        image_view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(ActivityMyself.this, ActivityPersonal.class);
+                startActivity(intent);
+
+            }
+        });
         textView= (TextView) findViewById(R.id.dlzc);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
