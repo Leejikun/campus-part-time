@@ -93,6 +93,59 @@
         android:layout_width="fill_parent"
         android:layout_height="50dp">
         <TextView
+            android:id="@+id/id_endtime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/endtime"
+            android:padding="10dp"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/id_publish_endtime"
+            android:layout_toEndOf="@+id/id_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入截止时间"
+            android:backgroundTint="@null"
+            android:background="@null"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/id_peoplenumber"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/peoplenumber"
+            android:padding="10dp"
+            android:textSize="15sp"/>
+        <EditText
+            android:id="@+id/id_publish_peoplenumber"
+            android:layout_toEndOf="@+id/id_peoplenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入要求人数"
+            android:backgroundTint="@null"
+            android:background="@null"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"/>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp">
+        <TextView
             android:text="@string/性别要求"
             android:padding="10dp"
             android:layout_width="100dp"

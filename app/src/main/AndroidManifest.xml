@@ -89,8 +89,9 @@
         <activity android:name=".ActivitySysteminforms" />
         <activity android:name=".Activitydetails" />
         <activity android:name=".ActivitySearch" />
-        <activity android:name=".ActivityEntrylist"/>
+        <activity android:name=".ActivityParttimelist"/>
         <activity android:name=".ActivityResume"/>
+        <activity android:name=".ActivityEntrylist"/>
         <activity android:name=".ActivitySignin">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
