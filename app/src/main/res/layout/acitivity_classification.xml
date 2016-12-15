@@ -74,6 +74,7 @@
             <RelativeLayout
                 android:id="@+id/id_classification_service"
                 android:layout_width="match_parent"
+                android:layout_marginTop="0dp"
                 android:layout_height="@dimen/item_height_middle"
                 android:background="@drawable/bg_item"
                 android:orientation="horizontal">
@@ -156,6 +157,7 @@
                 android:id="@+id/id_classification_propaganda"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/item_height_middle"
+                android:layout_marginTop="0dp"
                 android:background="@drawable/bg_item"
                 android:orientation="horizontal">
                 <ImageView
