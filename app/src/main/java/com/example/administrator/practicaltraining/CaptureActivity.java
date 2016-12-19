@@ -23,7 +23,7 @@ public class CaptureActivity extends Activity implements View.OnClickListener {
     private Button album, camera;
     private ImageView display;
 
-    private static final String TAG = "MyActivity";
+    private static final String TAG = "ActivityPersonal";
 
     private static final int ALBUM_REQUEST_CODE = 1;
     private static final int CAMERA_REQUEST_CODE = 2;
