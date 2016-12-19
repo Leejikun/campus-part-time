@@ -92,6 +92,7 @@
         <activity android:name=".ActivityParttimelist"/>
         <activity android:name=".ActivityResume"/>
         <activity android:name=".ActivityEntrylist"/>
+        <activity android:name=".ActivityClient"/>
         <activity android:name=".ActivitySignin">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
