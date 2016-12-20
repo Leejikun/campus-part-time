@@ -7,25 +7,28 @@
     android:orientation="vertical">
     <EditText
         android:id="@+id/login_edit_account"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="170dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入用户名"
-        android:textSize="15dp"/>
+        android:textSize="16dp"
+        android:background="@null"/>
     <EditText
         android:id="@+id/login_edit_pwd"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="22dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入密码"
-        android:textSize="15dp"/>
+        android:textSize="16dp"
+        android:background="@null"/>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
         <CheckBox
             android:layout_width="100dp"
             android:layout_height="20dp"
@@ -39,20 +42,22 @@
             android:layout_width="60dp"
             android:layout_height="20dp"
             android:text="修改密码"
-            android:layout_marginLeft="150dp"
+            android:layout_marginLeft="145dp"
             android:id="@+id/login_text_change_pwd"
-            android:textSize="15dp" />
+            android:textSize="15dp"
+            android:textColor="#666666"/>
     </LinearLayout>
     <Button
         android:id="@+id/login_btn_login"
         android:background="@drawable/button"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginTop="26dp"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="36dp"
         android:textSize="15dp"
-        android:text="登录"/>
+        android:text="登录"
+        android:textColor="#222222"/>
 <!--    <Button
         android:id="@+id/login_btn_cancle"
         android:background="#ff0000"
@@ -72,10 +77,10 @@
             android:textSize="15dp"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="还没有账号？去注册"
-            android:gravity="left"/>
+            android:gravity="right"/>
     </LinearLayout>
 </LinearLayout>

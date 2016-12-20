@@ -27,7 +27,7 @@
             android:layout_marginRight="14dp" />
 
         <ImageView
-            android:layout_width="190dp"
+            android:layout_width="215dp"
             android:layout_height="30dp"
             android:id="@+id/search"
             android:layout_gravity="center"
