@@ -60,5 +60,6 @@
         <item>高中教学3</item>
         <item>高中教学4</item>
     </string-array>
+    <string name="title_activity_capture">ActivityCapture</string>
 
 </resources>
