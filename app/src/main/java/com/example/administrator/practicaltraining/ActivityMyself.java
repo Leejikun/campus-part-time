@@ -92,7 +92,7 @@ public class ActivityMyself extends Activity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(ActivityMyself.this,ActivityParttimelist.class);
+                intent.setClass(ActivityMyself.this,ActivityEntrylist_2.class);
                 Bundle bundle=new Bundle();
                 String service=Entrylist.getText().toString();
                 bundle.putString("name",service);

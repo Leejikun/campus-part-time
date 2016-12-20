@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.practicaltraining.ActivityResume_num">
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        style="@style/TopbarStyle" >
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:background="@drawable/back"
+            android:id="@+id/fl_back"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/medium_text_size"
+            android:text="用户简历"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="姓名:"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="王行行"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" android:background="#dfdfdf"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="性别:"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="男"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" android:background="#dfdfdf"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="年龄:"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="21"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" android:background="#dfdfdf"></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="身份:"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="学生"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" android:background="#dfdfdf"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="手机:"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15231168586"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:id="@+id/jl_call">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" android:background="#dfdfdf"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="特长:"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="的酒叟爱抚分配看文吗牟尼佛我看破符文模范窝囊废i念佛玩呢看见你说念佛武军鞥非叫我呢份哦男人非偶尔弄完那份我呢佛我能玩佛反而own符文哦我我呢佛问佛我文公屋念佛我"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="6dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" android:background="#dfdfdf"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="工作经验:"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="电脑的买到票为契机ion入股佛而非我们赔钱无孟婆的碗你哦ID请问您is念佛机念佛IE我能送我能否破位马冬梅排名第欺骗我马屁坑我呢品破文峰蓝老妇女我浪费那两科飞牛网 烦恼我发你为了你佛罗窝囊废own发物流"
+            android:textSize="17sp"
+            android:textColor="#222222"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="6dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp" android:background="#dfdfdf"></LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:text="确定"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/theme"
+        android:textColor="#ffffff"
+        android:id="@+id/btn"/>
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

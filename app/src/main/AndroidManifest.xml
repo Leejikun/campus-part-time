@@ -89,10 +89,10 @@
         <activity android:name=".ActivitySysteminforms" />
         <activity android:name=".Activitydetails" />
         <activity android:name=".ActivitySearch" />
-        <activity android:name=".ActivityParttimelist"/>
-        <activity android:name=".ActivityResume"/>
-        <activity android:name=".ActivityEntrylist"/>
-        <activity android:name=".ActivityClient"/>
+        <activity android:name=".ActivityParttimelist" />
+        <activity android:name=".ActivityResume" />
+        <activity android:name=".ActivityEntrylist" />
+        <activity android:name=".ActivityClient" />
         <activity android:name=".ActivitySignin">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -109,7 +109,10 @@
 
         <activity android:name=".baidumap" />
         <activity android:name=".Resetpwd" />
-        <activity android:name=".ActivityMyptdetails"></activity>
+        <activity android:name=".ActivityMyptdetails" />
+        <activity android:name=".ActivityEntrylist_2" />
+        <activity android:name=".ActivityEnteylist_3" />
+        <activity android:name=".ActivityResume_num"></activity>
     </application>
 
 </manifest>
