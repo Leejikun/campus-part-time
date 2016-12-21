@@ -78,7 +78,6 @@
         <activity android:name=".ActivityHomepage" />
         <activity android:name=".ActivityClassification" />
         <activity android:name=".ActivityPersonal" />
-        <activity android:name=".CaptureActivity" />
         <activity android:name=".ActivityRegister" />
         <activity android:name=".ActivityLogin" />
         <activity android:name=".ActivityAppintorduce" />

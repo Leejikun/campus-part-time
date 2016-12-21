@@ -41,25 +41,25 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-            <com.example.administrator.practicaltraining.CircleImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/touxiang1"
-                android:padding="10dp"
-                android:id="@+id/touxiang"
-                android:layout_marginTop="15dp"
-                android:layout_weight="1"/>
+                <com.example.administrator.practicaltraining.CircleImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/touxiang1"
+                    android:padding="10dp"
+                    android:id="@+id/touxiang"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"/>
 
-            <TextView
-                android:id="@+id/text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="拍照/从相册中选择"
-                android:layout_marginLeft="20dp"
-                android:textColor="@color/bg_topbar"
-                android:layout_gravity="center"
-                android:textSize="20sp"
-                android:layout_weight="2" />
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拍照/从相册中选择"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/bg_topbar"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:layout_weight="2" />
             </LinearLayout>
 
             <View
@@ -326,6 +326,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#ccc"/>
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="40dp"></LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="保存"
+                android:background="@color/green"/>
+
             <LinearLayout
                 android:layout_width="100dp"
                 android:layout_height="100dp"></LinearLayout>
