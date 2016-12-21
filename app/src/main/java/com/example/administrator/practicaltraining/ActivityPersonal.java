@@ -66,8 +66,8 @@ public class ActivityPersonal extends AppCompatActivity {
                 switch (which) {
                     case CHOOSE_PICTURE: // 选择本地照片
 
-                        Intent openAlbumIntent = new Intent(Intent.ACTION_GET_CONTENT);
-                        openAlbumIntent.setType("image/*");
+                        Intent openAlbumIntent = new Intent(Intent.ACTION_PICK, null);
+                        openAlbumIntent.setDataAndType(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
                         startActivityForResult(openAlbumIntent, CHOOSE_PICTURE);
                         break;
 
@@ -93,7 +93,11 @@ public class ActivityPersonal extends AppCompatActivity {
                     startPhotoZoom(tempUri);
                     break;
                 case CHOOSE_PICTURE:
-                    startPhotoZoom(data.getData());
+                    try {
+                        startPhotoZoom(data.getData());
+                    } catch (NullPointerException e) {
+                        e.printStackTrace();// 用户点击取消操作
+                    }
 
                     break;
                 case CROP_SMALL_PICTURE:
@@ -160,5 +164,4 @@ public class ActivityPersonal extends AppCompatActivity {
             // ...
         }
     }
-
 }
