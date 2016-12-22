@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bj_wd">
+    android:layout_height="match_parent">
 
     <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="wrap_content"
@@ -55,7 +54,7 @@
     <RelativeLayout
         android:id="@+id/mypt"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
@@ -63,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="我的兼职"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -82,7 +81,7 @@
     <RelativeLayout
         android:id="@+id/id_myself_publish"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
@@ -90,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="发布兼职"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -109,7 +108,7 @@
             <RelativeLayout
                 android:id="@+id/entrylist"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:paddingTop="10dp"
                 android:background="#ffffff">
                 <TextView
@@ -118,7 +117,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="报名列表"
-                    android:textSize="17dp"
+                    android:textSize="17sp"
                     android:layout_centerVertical="true"
                     android:textColor="#000000"/>
                 <ImageView
@@ -137,7 +136,7 @@
             <RelativeLayout
                 android:id="@+id/resume"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="48dp"
                 android:paddingTop="10dp"
                 android:background="#ffffff">
                 <TextView
@@ -145,7 +144,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="我的简历"
-                    android:textSize="17dp"
+                    android:textSize="17sp"
                     android:layout_centerVertical="true"
                     android:textColor="#000000"/>
                 <ImageView
@@ -165,7 +164,7 @@
         android:layout_marginTop="@dimen/item_margin_top"
         android:id="@+id/share"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:background="#ffffff">
         <LinearLayout
             android:layout_width="match_parent"
@@ -179,7 +178,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="分享"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <LinearLayout
@@ -193,7 +192,7 @@
         android:layout_marginTop="@dimen/item_margin_top"
         android:id="@+id/callme"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:background="#ffffff">
         <LinearLayout
             android:layout_width="match_parent"
@@ -206,7 +205,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="联系客服"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -235,7 +234,7 @@
     <RelativeLayout
         android:id="@+id/yijianfankui"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:paddingTop="10dp"
         android:background="#ffffff">
         <TextView
@@ -244,7 +243,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="意见反馈"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView
@@ -264,7 +263,7 @@
         android:layout_marginTop="@dimen/item_margin_top"
         android:id="@+id/forus"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="48dp"
         android:background="#ffffff">
         <LinearLayout
             android:layout_width="match_parent"
@@ -283,7 +282,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="关于我们"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:layout_centerVertical="true"
             android:textColor="#000000"/>
         <ImageView

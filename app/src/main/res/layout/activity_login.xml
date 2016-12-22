@@ -22,36 +22,59 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="登陆"
+            android:text="登录"
             android:textColor="@color/black"
             android:textSize="@dimen/medium_text_size" />
     </RelativeLayout>
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-       // android:src="@drawable/loginback"/>
-    <TabHost
-        android:id="@+id/tabhost"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <TabHost android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android" >
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            >
             <TabWidget
-                android:layout_width="match_parent"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@android:id/tabs">
+                android:layout_weight="0.0"
+                android:id="@android:id/tabs"
+                android:visibility="gone"/>
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
 
-            </TabWidget>
+                android:orientation="horizontal"
+                android:id="@+id/tabhost_radiogroup"
+                android:background="@drawable/toolbar">
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/tabhost_radio_button0"
+                    android:tag="radio_button0"
+                    android:text="手机号登录"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:drawableTop="@drawable/littletab"
+                    style="@style/main_tab_bottom1"/>
+                <RadioButton
+                    android:id="@+id/tabhost_radio_button1"
+                    android:tag="radio_button1"
+                    android:text="账号密码登录"
+                    android:textSize="12dp"
+                    android:textColor="#000000"
+                    android:drawableTop="@drawable/littletab1"
+                    style="@style/main_tab_bottom1"/>
+            </RadioGroup>
             <FrameLayout
                 android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/bigback">
-
-            </FrameLayout>
-
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"/>
         </LinearLayout>
     </TabHost>
 </LinearLayout>

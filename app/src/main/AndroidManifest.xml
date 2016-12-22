@@ -112,7 +112,9 @@
         <activity android:name=".ActivityMyptdetails" />
         <activity android:name=".ActivityEntrylist_2" />
         <activity android:name=".ActivityEnteylist_3" />
-        <activity android:name=".ActivityResume_num"></activity>
+        <activity android:name=".ActivityResume_num" />
+        <activity android:name=".Login_tab1" />
+        <activity android:name=".Login_tab2"></activity>
     </application>
 
 </manifest>

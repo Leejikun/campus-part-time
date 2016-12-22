@@ -22,12 +22,12 @@
             android:text="河北师大"
             android:textSize="17dp"
             android:textColor="#ECFCAD"
-            android:layout_marginLeft="13dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="12dp"
             android:layout_marginRight="14dp" />
 
         <ImageView
-            android:layout_width="215dp"
+            android:layout_width="245dp"
             android:layout_height="30dp"
             android:id="@+id/search"
             android:layout_gravity="center"
@@ -38,7 +38,7 @@
             android:layout_width="25dp"
             android:layout_height="25dp"
             android:background="@drawable/icon_9"
-            android:layout_marginLeft="13dp"
+            android:layout_marginLeft="5dp"
             android:layout_marginTop="11dp" />
 
     </LinearLayout>
