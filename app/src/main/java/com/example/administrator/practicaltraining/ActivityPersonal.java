@@ -11,6 +11,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +20,7 @@ import java.io.File;
 
 public class ActivityPersonal extends AppCompatActivity {
     private ImageView img_view;
+    private Button button;
     private TextView tex_view;
     private CircleImageView touxiang;
     protected static final int CHOOSE_PICTURE = 0;
@@ -30,16 +32,20 @@ public class ActivityPersonal extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_information);
+        button =(Button)findViewById(R.id.bc) ;
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         img_view = (ImageView) findViewById(R.id.back);
         img_view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent();
-                intent.setClass(ActivityPersonal.this, ActivityMyself.class);
-                startActivity(intent);
+                   finish();
             }
         });
-
         tex_view = (TextView) findViewById(R.id.text);
         tex_view.setOnClickListener(new View.OnClickListener() {
             @Override

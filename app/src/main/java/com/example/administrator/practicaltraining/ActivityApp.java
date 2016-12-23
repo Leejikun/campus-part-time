@@ -19,9 +19,7 @@ public class ActivityApp extends Activity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent();
-                intent.setClass(ActivityApp.this,ActivityMyself.class);
-                startActivity(intent);
+              finish();
             }
         });
     }

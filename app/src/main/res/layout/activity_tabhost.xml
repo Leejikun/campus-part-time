@@ -30,8 +30,8 @@
                 android:checked="true"
                 android:id="@+id/tabhost_radio_button0"
                 android:tag="radio_button0"
-                android:text="首页"
                 android:textColor="#000000"
+                android:text="首页"
                 android:textSize="12dp"
                 android:drawableTop="@drawable/shouye"
                 style="@style/main_tab_bottom"/>

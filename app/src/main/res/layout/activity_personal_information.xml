@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1"
-    android:background="@drawable/bc">
+    android:background="@drawable/bigback">
 
     <RelativeLayout
         android:layout_alignParentTop="true"
@@ -197,7 +197,7 @@
                     android:padding="10dp"
                     android:text="QQ："
                     android:textColor="#000000"
-                    android:textSize="17dp"/>
+                    android:textSize="17sp"/>
                 <EditText
                     android:id="@+id/mymoblenumber"
                     android:layout_width="wrap_content"
@@ -225,7 +225,7 @@
                     android:layout_marginLeft="16dp"
                     android:gravity="center_vertical"
                     android:id="@+id/id_card"
-                    android:textSize="17dp"/>
+                    android:textSize="17sp"/>
                 <EditText
                     android:layout_toEndOf="@+id/id_card"
                     android:layout_width="wrap_content"
@@ -280,7 +280,7 @@
                     android:layout_marginLeft="16dp"
                     android:gravity="center_vertical"
                     android:id="@+id/id_company"
-                    android:textSize="17dp"/>
+                    android:textSize="17sp"/>
                 <EditText
                     android:layout_toEndOf="@+id/id_company"
                     android:layout_width="wrap_content"
@@ -310,7 +310,7 @@
                     android:padding="10dp"
                     android:text="兴趣爱好："
                     android:textColor="#000000"
-                    android:textSize="17dp"/>
+                    android:textSize="17sp"/>
                 <EditText
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -331,11 +331,13 @@
                 android:layout_height="40dp"></LinearLayout>
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/bc"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:text="保存"
-                android:background="@color/green"/>
+                android:textColor="#fcfcfc"
+                android:background="@drawable/button2"/>
 
             <LinearLayout
                 android:layout_width="100dp"
