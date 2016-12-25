@@ -1,5 +1,6 @@
 package com.example.administrator.practicaltraining;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
@@ -16,6 +17,7 @@ import cn.smssdk.SMSSDK;
 
 import static cn.smssdk.SMSSDK.getSupportedCountries;
 import static cn.smssdk.SMSSDK.getVerificationCode;
+import static cn.smssdk.SMSSDK.getVoiceVerifyCode;
 import static cn.smssdk.SMSSDK.submitVerificationCode;
 
 public class Login_tab1 extends AppCompatActivity {
@@ -136,11 +138,15 @@ public class Login_tab1 extends AppCompatActivity {
             public void onClick(View v) {
                 //验证操作
                 code=((EditText)findViewById(R.id.et_code)).getText().toString();
-                if (code.equals("")){
-                    Toast.makeText(Login_tab1.this,"验证码不能为空",Toast.LENGTH_SHORT).show();
-                }else  {
+                if (code.equals("")) {
+                    Toast.makeText(Login_tab1.this, "验证码不能为空", Toast.LENGTH_SHORT).show();
+                }else {
                     //填写了验证码，进行验证
                     submitVerificationCode("86", phone, code);
+                    Toast.makeText(Login_tab1.this,"验证成功" ,Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(Login_tab1.this,MainActivity.class) ;
+                    startActivity(i);
+                    finish();
                 }
             }
         });
