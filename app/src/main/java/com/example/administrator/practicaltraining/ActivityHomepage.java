@@ -75,6 +75,15 @@ public class ActivityHomepage extends Activity {
                 startActivity(intent);
             }
         });
+        ImageView sousuo1 = (ImageView) findViewById(R.id.search1);
+        sousuo1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(ActivityHomepage.this,ActivitySearch.class);
+                startActivity(intent);
+            }
+        });
         mViewPaper = (ViewPager) findViewById(R.id.vp);
 
         //显示的图片

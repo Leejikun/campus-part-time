@@ -24,8 +24,8 @@
             android:gravity="center_vertical"
             android:layout_gravity="bottom"
             android:orientation="horizontal"
-            android:id="@+id/tabhost_radiogroup"
-            android:background="@drawable/bg_tab">
+            android:background="@drawable/bg_tab"
+            android:id="@+id/tabhost_radiogroup">
             <RadioButton
                 android:checked="true"
                 android:id="@+id/tabhost_radio_button0"
