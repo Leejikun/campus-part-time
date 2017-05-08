@@ -12,6 +12,7 @@ import android.widget.RelativeLayout;
 public class ActivityMessage extends Activity {
     private RelativeLayout relativeLayout;
     private RelativeLayout relativeLayout1;
+    private RelativeLayout relativeLayout2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,15 @@ public class ActivityMessage extends Activity {
 
           }
       });
+        relativeLayout2 = (RelativeLayout)findViewById(R.id.layout_activity);
+        relativeLayout2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(ActivityMessage.this,ActivityClient.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
