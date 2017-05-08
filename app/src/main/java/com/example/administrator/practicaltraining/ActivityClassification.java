@@ -23,14 +23,6 @@ public class ActivityClassification extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.acitivity_classification);
 
-        findViewById(R.id.aaaaa).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent();
-                i.setClass(ActivityClassification.this,baidumap.class);
-                startActivity(i);
-            }
-        });
 
         final RelativeLayout hometeacher = (RelativeLayout)findViewById(R.id.id_classification_hometeacher);
          teacher=(TextView)findViewById(R.id.teacher);
